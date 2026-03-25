@@ -1,0 +1,286 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre Nosotras",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Gastronomía,\nCultura,\nEvolución",
+    "subtitle": "Transformamos talento culinario en experiencias que trascienden.",
+    "cta1": "Conocé nuestra historia",
+    "cta2": "Ver proyectos",
+    "scroll": "Desplazarse"
+  },
+  "mission": {
+    "tag": "Nuestra misión",
+    "quote": "El puente entre el talento culinario y el éxito sostenible.",
+    "description": "Conectamos chefs visionarios con las herramientas y estrategias que necesitan para prosperar."
+  },
+  "home": {
+    "whoWeAre": {
+      "tag": "Quiénes somos",
+      "description": "Itibá es un estudio de innovación culinaria y agencia creativa. Diseñamos y ejecutamos experiencias gastronómicas, estrategias y momentos de marca que integran herencia, sostenibilidad y creatividad, generando resultados medibles y crecimiento sostenible."
+    },
+    "gap": {
+      "tag": "El vacío creativo",
+      "title": "La industria actual de la gastronomía y hospitalidad enfrenta una desconexión:",
+      "points": [
+        {
+          "number": "01",
+          "title": "Patrimonio fragmentado",
+          "description": "La herencia, la sostenibilidad y la autenticidad permanecen fragmentadas."
+        },
+        {
+          "number": "02",
+          "title": "Experiencias sin alma",
+          "description": "Falta de soluciones intergeneracionales que respondan a la demanda de un servicio holístico al huésped y experiencias culinarias culturalmente ricas."
+        },
+        {
+          "number": "03",
+          "title": "Narrativa débil",
+          "description": "Las marcas y la hospitalidad luchan por contar historias convincentes a través de la gastronomía."
+        }
+      ]
+    },
+    "opportunity": {
+      "tag": "La oportunidad",
+      "title": "Una demanda que pocos están satisfaciendo",
+      "stats": [
+        { "value": "$36.5B", "label": "Mercado de eventos culinarios" },
+        { "value": "68%", "label": "Prefieren experiencias auténticas" },
+        { "value": "$40B+", "label": "Proyección para 2030" }
+      ]
+    },
+    "solution": {
+      "tag": "La solución",
+      "title": "Itibá cierra la brecha",
+      "pillars": [
+        {
+          "number": "01",
+          "title": "Arquitectura culinaria",
+          "description": "Conceptos con raíz cultural y visión artística."
+        },
+        {
+          "number": "02",
+          "title": "Narrativa creativa",
+          "description": "Historias que hacen memorable a una marca."
+        },
+        {
+          "number": "03",
+          "title": "Visión estratégica",
+          "description": "Modelos de negocio rentables y sostenibles."
+        }
+      ]
+    },
+    "aboutPreview": {
+      "tag": "Sobre Itibá",
+      "title": "Una agencia con propósito",
+      "description": "Conocé nuestra historia, visión y las mentes detrás de Itibá.",
+      "cta": "Conocé más sobre Itibá"
+    },
+    "impact": {
+      "tag": "Impacto y visión",
+      "title": "Gastronomía con propósito",
+      "intro": "Cada proyecto que diseñamos apunta a tres compromisos inamovibles:",
+      "points": [
+        "Elevar la hospitalidad y las ofertas de marca.",
+        "Integrar sostenibilidad y autenticidad cultural.",
+        "Entregar resultados medibles y responsabilidad social."
+      ]
+    }
+  },
+  "services": {
+    "tag": "Nuestro ADN",
+    "title": "Los cinco pilares de Itibá",
+    "viewAll": "Explorar servicios",
+    "items": [
+      {
+        "number": "01",
+        "title": "Alquimia Lab",
+        "description": "Innovación culinaria donde tradición y vanguardia se fusionan."
+      },
+      {
+        "number": "02",
+        "title": "Eventos & Activaciones",
+        "description": "Experiencias gastronómicas con identidad y propósito."
+      },
+      {
+        "number": "03",
+        "title": "Programas de Formación",
+        "description": "Training especializado para equipos de alto nivel."
+      },
+      {
+        "number": "04",
+        "title": "Consultoría Estratégica",
+        "description": "Concepto, narrativa, operaciones y finanzas integradas."
+      },
+      {
+        "number": "05",
+        "title": "Integración Deportiva",
+        "description": "Nutrición y gastronomía de alto rendimiento."
+      }
+    ]
+  },
+  "about": {
+    "meta": {
+      "title": "Sobre Nosotras — Itibá Gastronomic Agency",
+      "description": "Conocé la historia, visión y equipo detrás de Itibá Gastronomic Agency."
+    },
+    "hero": {
+      "tag": "Sobre Nosotras",
+      "title": "Una agencia construida desde adentro de la industria"
+    },
+    "whoWeAre": {
+      "tag": "Quiénes somos",
+      "title": "Nacimos para transformar la gastronomía",
+      "description": "Itibá conecta el talento culinario excepcional con las estrategias y herramientas para alcanzar el éxito sostenible. Somos puente, catalizador y amplificador del talento que merece ser visto."
+    },
+    "philosophy": {
+      "tag": "Filosofía",
+      "mission": {
+        "label": "Misión",
+        "text": "Transformar el talento culinario en proyectos con identidad, propósito y legado sostenible."
+      },
+      "vision": {
+        "label": "Visión",
+        "text": "Ser la agencia de referencia para la gastronomía latinoamericana en el mundo."
+      },
+      "values": {
+        "label": "Valores",
+        "text": "Autenticidad cultural, excelencia técnica, sostenibilidad responsable e innovación con raíz."
+      }
+    },
+    "theGap": {
+      "tag": "El problema",
+      "title": "Una brecha crítica en la industria",
+      "points": [
+        "Los chefs talentosos carecen de estructuras empresariales sólidas",
+        "Los inversores no tienen visibilidad de oportunidades culinarias verificadas",
+        "Las marcas gastronómicas luchan por construir narrativas auténticas"
+      ]
+    },
+    "opportunity": {
+      "tag": "La oportunidad",
+      "title": "Un mercado en expansión acelerada",
+      "stats": [
+        { "value": "$8.1B", "label": "Mercado global de medios gastronómicos" },
+        { "value": "$36.5B", "label": "Industria de eventos y experiencias culinarias" },
+        { "value": "$40B+", "label": "Proyección del mercado para 2030" }
+      ]
+    },
+    "solution": {
+      "tag": "La solución",
+      "title": "Tres pilares de transformación",
+      "pillars": [
+        {
+          "number": "01",
+          "title": "Experiencia Culinaria Arquitectónica",
+          "description": "Conceptos con profundidad técnica y visión artística."
+        },
+        {
+          "number": "02",
+          "title": "Narrativa Creativa",
+          "description": "Historias que hacen memorable a una marca culinaria."
+        },
+        {
+          "number": "03",
+          "title": "Estrategia Financiera",
+          "description": "Modelos de negocio rentables y sostenibles."
+        }
+      ]
+    },
+    "team": {
+      "tag": "El equipo",
+      "title": "Las mentes detrás de Itibá",
+      "members": [
+        {
+          "name": "Dayanny De La Cruz",
+          "title": "Chef & CEO",
+          "role": "Visionaria culinaria",
+          "description": "Chef con más de 15 años en gastronomía de lujo internacional. Fundadora y voz creativa de Itibá.",
+          "quote": "La gastronomía es el lenguaje más honesto que existe."
+        },
+        {
+          "name": "Noelia Caccavelli",
+          "title": "CCO — Chief Creative Officer",
+          "role": "Arquitecta de narrativas",
+          "description": "Experta en narrativa de marca y estrategia creativa para el sector gastronómico.",
+          "quote": "Cada marca tiene una historia que merece ser contada con precisión."
+        },
+        {
+          "name": "Oneida Franco",
+          "title": "COO — Chief Operating Officer",
+          "role": "Estratega financiera",
+          "description": "Especialista en operaciones y estrategia financiera para negocios culinarios.",
+          "quote": "La sostenibilidad es financiera, operativa y humana."
+        }
+      ]
+    },
+    "vision": {
+      "tag": "Visión e impacto",
+      "title": "Hacia dónde vamos",
+      "statements": [
+        "Elevar el estándar de la gastronomía latinoamericana a nivel global",
+        "Crear ecosistemas donde el talento culinario prospera sin límites",
+        "Construir el futuro de la gastronomía con propósito y excelencia"
+      ]
+    }
+  },
+  "projects": {
+    "meta": {
+      "title": "Proyectos — Itibá Gastronomic Agency",
+      "description": "Explorá nuestros proyectos y colaboraciones en la industria gastronómica."
+    },
+    "tag": "Proyectos",
+    "title": "Nuestro trabajo",
+    "subtitle": "Cada proyecto es una historia de transformación.",
+    "viewMore": "Ver más",
+    "viewAll": "Ver todos los proyectos"
+  },
+  "contact": {
+    "meta": {
+      "title": "Contacto — Itibá Gastronomic Agency",
+      "description": "Conectá con Itibá Gastronomic Agency para tu próximo proyecto culinario."
+    },
+    "tag": "Contacto",
+    "title": "Trabajemos juntos",
+    "subtitle": "¿Tenés un concepto culinario que merece brillar? Nos encantaría escucharte.",
+    "info": {
+      "email": "hello@itiba.agency",
+      "follow": "Seguinos en redes"
+    },
+    "form": {
+      "name": "Nombre",
+      "namePlaceholder": "Tu nombre completo",
+      "email": "Correo electrónico",
+      "emailPlaceholder": "tu@correo.com",
+      "company": "Empresa",
+      "companyPlaceholder": "Tu empresa (opcional)",
+      "message": "Mensaje",
+      "messagePlaceholder": "Contanos sobre tu proyecto...",
+      "submit": "Enviar mensaje",
+      "success": "¡Mensaje enviado con éxito! Te contactaremos pronto.",
+      "errors": {
+        "nameRequired": "Por favor ingresá tu nombre",
+        "emailRequired": "Por favor ingresá tu correo electrónico",
+        "emailInvalid": "Por favor ingresá un correo válido",
+        "messageRequired": "Por favor ingresá tu mensaje"
+      }
+    }
+  },
+  "footer": {
+    "tagline": "Gastronomía, Cultura, Evolución",
+    "description": "Agencia de innovación culinaria dedicada a transformar el talento gastronómico en legado.",
+    "copyright": "© 2025 Itibá Gastronomic Agency. Todos los derechos reservados.",
+    "navTitle": "Navegación",
+    "servicesTitle": "Servicios",
+    "services": [
+      "Alquimia Lab",
+      "Eventos & Activaciones",
+      "Programas de Formación",
+      "Consultoría Estratégica",
+      "Integración Deportiva"
+    ]
+  }
+}

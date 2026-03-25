@@ -1,0 +1,286 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Gastronomy,\nCulture,\nEvolution",
+    "subtitle": "We transform culinary talent into experiences that transcend.",
+    "cta1": "Discover our story",
+    "cta2": "View projects",
+    "scroll": "Scroll"
+  },
+  "mission": {
+    "tag": "Our mission",
+    "quote": "The bridge between culinary talent and sustainable success.",
+    "description": "We connect visionary chefs with the tools and strategies they need to thrive."
+  },
+  "home": {
+    "whoWeAre": {
+      "tag": "Who we are",
+      "description": "Itibá is a culinary innovation studio and creative agency. We design and execute gastronomic experiences, strategies, and brand moments that merge heritage, sustainability, and creativity — delivering measurable results and sustainable growth."
+    },
+    "gap": {
+      "tag": "The creative void",
+      "title": "Today’s food & hospitality industry faces a disconnect:",
+      "points": [
+        {
+          "number": "01",
+          "title": "Fragmented heritage",
+          "description": "Heritage, sustainability, and authenticity remain fragmented"
+        },
+        {
+          "number": "02",
+          "title": "Soulless experiences",
+          "description": " Multi- generational solutions in the gap of the demand of Holistic Guest Service and culturally rich food experiences"
+        },
+        {
+          "number": "03",
+          "title": "Weak storytelling",
+          "description": "Brands & hospitality struggle to tell compelling stories through gastronomy."
+        }
+      ]
+    },
+    "opportunity": {
+      "tag": "The opportunity",
+      "title": "A demand few are satisfying",
+      "stats": [
+        { "value": "$36.5B", "label": "Culinary events market" },
+        { "value": "68%", "label": "Prefer authentic experiences" },
+        { "value": "$40B+", "label": "Projected by 2030" }
+      ]
+    },
+    "solution": {
+      "tag": "The solution",
+      "title": "Itibá closes the gap",
+      "pillars": [
+        {
+          "number": "01",
+          "title": "Culinary architecture",
+          "description": "Concepts with cultural roots and artistic vision."
+        },
+        {
+          "number": "02",
+          "title": "Creative storytelling",
+          "description": "Stories that make a brand memorable."
+        },
+        {
+          "number": "03",
+          "title": "Strategic vision",
+          "description": "Profitable and sustainable business models."
+        }
+      ]
+    },
+    "aboutPreview": {
+      "tag": "About Itibá",
+      "title": "An agency with purpose",
+      "description": "Discover our story, vision, and the minds behind Itibá.",
+      "cta": "Learn more about Itibá"
+    },
+    "impact": {
+      "tag": "Impact & vision",
+      "title": "Gastronomy with purpose",
+      "intro": "Every project we design is guided by three unwavering commitments:",
+      "points": [
+        "Elevate hospitality & brand offerings.",
+        "Embed sustainability & cultural authenticity.",
+        "Deliver measurable results & social responsibility."
+      ]
+    }
+  },
+  "services": {
+    "tag": "Our DNA",
+    "title": "The five pillars of Itibá",
+    "viewAll": "Explore services",
+    "items": [
+      {
+        "number": "01",
+        "title": "Alquimia Lab",
+        "description": "Culinary innovation where tradition meets avant-garde."
+      },
+      {
+        "number": "02",
+        "title": "Events & Activations",
+        "description": "Gastronomic experiences with identity and purpose."
+      },
+      {
+        "number": "03",
+        "title": "Training Programs",
+        "description": "Specialized training for high-level gastronomic teams."
+      },
+      {
+        "number": "04",
+        "title": "Strategic Consulting",
+        "description": "Concept, narrative, operations, and finance integrated."
+      },
+      {
+        "number": "05",
+        "title": "Sports Integration",
+        "description": "High-performance nutrition and gastronomy."
+      }
+    ]
+  },
+  "about": {
+    "meta": {
+      "title": "About Us — Itibá Gastronomic Agency",
+      "description": "Learn about the story, vision, and team behind Itibá Gastronomic Agency."
+    },
+    "hero": {
+      "tag": "About Us",
+      "title": "An agency built from inside the industry"
+    },
+    "whoWeAre": {
+      "tag": "Who we are",
+      "title": "Born to transform gastronomy",
+      "description": "Itibá connects exceptional culinary talent with the strategies and tools to achieve sustainable success. We are bridge, catalyst, and amplifier of talent that deserves to be seen."
+    },
+    "philosophy": {
+      "tag": "Philosophy",
+      "mission": {
+        "label": "Mission",
+        "text": "Transform culinary talent into projects with identity, purpose, and sustainable legacy."
+      },
+      "vision": {
+        "label": "Vision",
+        "text": "To be the reference agency for Latin American gastronomy in the world."
+      },
+      "values": {
+        "label": "Values",
+        "text": "Cultural authenticity, technical excellence, responsible sustainability, and innovation with roots."
+      }
+    },
+    "theGap": {
+      "tag": "The problem",
+      "title": "A critical gap in the industry",
+      "points": [
+        "Talented chefs lack solid business structures",
+        "Investors have no visibility into verified culinary opportunities",
+        "Gastronomic brands struggle to build authentic narratives"
+      ]
+    },
+    "opportunity": {
+      "tag": "The opportunity",
+      "title": "A rapidly expanding market",
+      "stats": [
+        { "value": "$8.1B", "label": "Global gastronomic media market" },
+        { "value": "$36.5B", "label": "Culinary events and experiences industry" },
+        { "value": "$40B+", "label": "Projected market size by 2030" }
+      ]
+    },
+    "solution": {
+      "tag": "The solution",
+      "title": "Three pillars of transformation",
+      "pillars": [
+        {
+          "number": "01",
+          "title": "Architectural Culinary Expertise",
+          "description": "Concepts with technical depth and artistic vision."
+        },
+        {
+          "number": "02",
+          "title": "Creative Storytelling",
+          "description": "Stories that make a culinary brand memorable."
+        },
+        {
+          "number": "03",
+          "title": "Strategic Financial Expertise",
+          "description": "Profitable and sustainable business models."
+        }
+      ]
+    },
+    "team": {
+      "tag": "The team",
+      "title": "The minds behind Itibá",
+      "members": [
+        {
+          "name": "Dayanny De La Cruz",
+          "title": "Chef & CEO",
+          "role": "Culinary visionary",
+          "description": "Chef with over 15 years in international luxury gastronomy. Founder and creative voice of Itibá.",
+          "quote": "Gastronomy is the most honest language that exists."
+        },
+        {
+          "name": "Noelia Caccavelli",
+          "title": "CCO — Chief Creative Officer",
+          "role": "Narrative architect",
+          "description": "Expert in brand storytelling and creative strategy for the gastronomic sector.",
+          "quote": "Every brand has a story that deserves to be told with precision."
+        },
+        {
+          "name": "Oneida Franco",
+          "title": "COO — Chief Operating Officer",
+          "role": "Financial strategist",
+          "description": "Specialist in operations and financial strategy for culinary businesses.",
+          "quote": "Sustainability is financial, operational, and human."
+        }
+      ]
+    },
+    "vision": {
+      "tag": "Vision & impact",
+      "title": "Where we're headed",
+      "statements": [
+        "Elevate the standard of Latin American gastronomy on a global stage",
+        "Create ecosystems where culinary talent thrives without limits",
+        "Build the future of gastronomy with purpose and excellence"
+      ]
+    }
+  },
+  "projects": {
+    "meta": {
+      "title": "Projects — Itibá Gastronomic Agency",
+      "description": "Explore our projects and collaborations in the gastronomic industry."
+    },
+    "tag": "Projects",
+    "title": "Our work",
+    "subtitle": "Every project is a story of transformation.",
+    "viewMore": "View more",
+    "viewAll": "View all projects"
+  },
+  "contact": {
+    "meta": {
+      "title": "Contact — Itibá Gastronomic Agency",
+      "description": "Connect with Itibá Gastronomic Agency for your next culinary project."
+    },
+    "tag": "Contact",
+    "title": "Let's work together",
+    "subtitle": "Do you have a culinary concept that deserves to shine? We'd love to hear from you.",
+    "info": {
+      "email": "hello@itiba.agency",
+      "follow": "Follow us"
+    },
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your full name",
+      "email": "Email",
+      "emailPlaceholder": "you@email.com",
+      "company": "Company",
+      "companyPlaceholder": "Your company (optional)",
+      "message": "Message",
+      "messagePlaceholder": "Tell us about your project...",
+      "submit": "Send message",
+      "success": "Message sent successfully! We'll be in touch soon.",
+      "errors": {
+        "nameRequired": "Please enter your name",
+        "emailRequired": "Please enter your email",
+        "emailInvalid": "Please enter a valid email",
+        "messageRequired": "Please enter your message"
+      }
+    }
+  },
+  "footer": {
+    "tagline": "Gastronomy, Culture, Evolution",
+    "description": "Culinary innovation agency dedicated to transforming gastronomic talent into legacy.",
+    "copyright": "© 2025 Itibá Gastronomic Agency. All rights reserved.",
+    "navTitle": "Navigation",
+    "servicesTitle": "Services",
+    "services": [
+      "Alquimia Lab",
+      "Events & Activations",
+      "Training Programs",
+      "Strategic Consulting",
+      "Sports Integration"
+    ]
+  }
+}
