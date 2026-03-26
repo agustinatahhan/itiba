@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
+import Image from "next/image";
 import FadeIn from "@/components/animations/FadeIn";
 import ContactForm from "@/components/sections/ContactForm";
 import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
@@ -25,13 +26,22 @@ export default async function ContactPage() {
   return (
     <>
       {/* Page Header */}
-      <section className="bg-green-deep pt-40 pb-24">
-        <div className="section-wrapper pt-0 pb-0">
+      <section className="relative flex items-end pt-32 pb-14 md:pt-52 md:pb-28 overflow-hidden min-h-[45vh] md:min-h-[65vh]">
+        <Image
+          src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1920&q=80"
+          alt="Contacto Itibá"
+          fill
+          className="object-cover object-center"
+          priority
+          unoptimized
+        />
+        <div className="absolute inset-0 bg-void/70" />
+        <div className="section-wrapper pt-0 pb-0 relative z-10 w-full">
           <FadeIn>
             <span className="section-tag text-gold/70">{t("tag")}</span>
           </FadeIn>
           <FadeIn delay={0.1}>
-            <h1 className="heading-xl text-cream mt-4">{t("title")}</h1>
+            <h2 className="heading-xl text-cream mt-4">{t("title")}</h2>
           </FadeIn>
           <FadeIn delay={0.2}>
             <p

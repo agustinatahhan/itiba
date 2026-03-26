@@ -13,14 +13,14 @@ interface ProjectsGridProps {
 
 export default function ProjectsGrid({ locale, viewMoreLabel }: ProjectsGridProps) {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0.5 bg-gold/10">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0.5 bg-body/8">
       {projects.map((project, i) => {
         const title = locale === "es" ? project.title.es : project.title.en;
         const category = locale === "es" ? project.category.es : project.category.en;
         const description =
           locale === "es" ? project.description.es : project.description.en;
 
-        // Magazine layout: first card spans 2 columns on lg
+     
         const isFeature = i === 0;
 
         return (
@@ -30,13 +30,13 @@ export default function ProjectsGrid({ locale, viewMoreLabel }: ProjectsGridProp
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-60px" }}
             transition={{ duration: 0.5, ease: "easeOut", delay: (i % 3) * 0.1 }}
-            className={`group relative bg-ivory overflow-hidden ${
+            className={`group relative bg-white overflow-hidden ${
               isFeature ? "lg:col-span-2" : ""
             }`}
           >
             {/* Image */}
             <div
-              className={`relative overflow-hidden ${isFeature ? "aspect-[16/9]" : "aspect-[4/3]"}`}
+              className={`relative overflow-hidden ${isFeature ? "aspect-video" : "aspect-4/3"}`}
             >
               <Image
                 src={project.image}

@@ -68,16 +68,5 @@ export const projects: Project[] = [
       "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=800&q=80",
     slug: "chef-dayanny-digital",
   },
-  {
-    id: "6",
-    category: { es: "Desarrollo de Concepto", en: "Concept Development" },
-    title: { es: "Raíces — Pop-Up Experience", en: "Raíces — Pop-Up Experience" },
-    description: {
-      es: "Diseño y ejecución de una experiencia gastronómica pop-up itinerante que celebra las raíces culinarias latinoamericanas en ciudades internacionales.",
-      en: "Design and execution of an itinerant pop-up gastronomic experience celebrating Latin American culinary roots in international cities.",
-    },
-    image:
-      "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=800&q=80",
-    slug: "raices-popup",
-  },
+
 ];

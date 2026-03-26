@@ -101,7 +101,7 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <LanguageToggle />
+            <LanguageToggle scrolled={scrolled} />
           </div>
 
           {/* Mobile Menu Button */}

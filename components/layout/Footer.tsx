@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
-
+import Image from "next/image";
 export default function Footer() {
   const locale = useLocale();
   const tNav = useTranslations("nav");
@@ -23,62 +23,45 @@ export default function Footer() {
   ];
 
   return (
-    <footer
-      className="bg-brown-warm text-cream"
-      style={{ backgroundColor: "#3B1F0A" }}
-    >
-      <div className="max-w-7xl mx-auto px-6 md:px-12 py-16">
+    <footer className="bg-cream">
+   
+      {/* Divider */}
+      <div className="h-px bg-body/15 mx-6 md:mx-12" />
+
+      {/* Main content */}
+      <div className="max-w-7xl mx-auto px-6 md:px-12 py-14">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
-          {/* Brand */}
+
+          {/* Brand column */}
           <div className="md:col-span-2">
             <div className="mb-4">
-              <div
-                className="text-2xl font-light tracking-[0.2em] text-ivory"
-                style={{ fontFamily: "var(--font-heading)" }}
-              >
-                ITIBÁ
-              </div>
-              <div
-                className="text-[0.5rem] font-medium tracking-[0.35em] uppercase text-ivory/50 mt-0.5"
-                style={{ fontFamily: "var(--font-body)" }}
-              >
-                Gastronomic Agency
-              </div>
+            <Image src="/images/logo/logoitibadark.png" alt="Logo Itibá" width={200} height={200}/>
             </div>
-            <p
-              className="text-ivory/60 text-sm leading-relaxed max-w-xs mt-4"
-              style={{ fontFamily: "var(--font-body)" }}
-            >
+            <p className="text-sm leading-relaxed max-w-xs mt-4 font-body text-body/60">
               {tFooter("description")}
             </p>
             <div className="flex gap-3 mt-6">
-              <a
-                href="https://www.instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Instagram"
-                className="w-9 h-9 border border-ivory/20 flex items-center justify-center text-ivory/60 hover:text-ivory hover:border-ivory/50 transition-all"
-              >
-                <FaInstagram size={14} />
-              </a>
-              <a
-                href="https://www.linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="LinkedIn"
-                className="w-9 h-9 border border-ivory/20 flex items-center justify-center text-ivory/60 hover:text-ivory hover:border-ivory/50 transition-all"
-              >
-                <FaLinkedinIn size={14} />
-              </a>
+              {[
+                { href: "https://www.instagram.com", label: "Instagram", Icon: FaInstagram },
+                { href: "https://www.linkedin.com", label: "LinkedIn", Icon: FaLinkedinIn },
+              ].map(({ href, label, Icon }) => (
+                <a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={label}
+                  className="w-9 h-9 flex items-center justify-center transition-colors text-body/50 border border-body/20 hover:text-body hover:border-body/50"
+                >
+                  <Icon size={14} />
+                </a>
+              ))}
             </div>
           </div>
 
           {/* Navigation */}
           <div>
-            <h3
-              className="text-xs font-medium tracking-widest uppercase text-gold/70 mb-6"
-              style={{ fontFamily: "var(--font-body)" }}
-            >
+            <h3 className="text-xs font-medium tracking-widest uppercase mb-6 font-body text-olive">
               {tFooter("navTitle")}
             </h3>
             <ul className="space-y-3">
@@ -86,8 +69,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-ivory/60 hover:text-ivory text-sm transition-colors"
-                    style={{ fontFamily: "var(--font-body)" }}
+                    className="text-sm transition-colors font-body text-body/60 hover:text-body"
                   >
                     {link.label}
                   </Link>
@@ -98,19 +80,13 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h3
-              className="text-xs font-medium tracking-widest uppercase text-gold/70 mb-6"
-              style={{ fontFamily: "var(--font-body)" }}
-            >
+            <h3 className="text-xs font-medium tracking-widest uppercase mb-6 font-body text-olive">
               {tFooter("servicesTitle")}
             </h3>
             <ul className="space-y-3">
               {serviceLinks.map((service) => (
                 <li key={service}>
-                  <span
-                    className="text-ivory/60 text-sm"
-                    style={{ fontFamily: "var(--font-body)" }}
-                  >
+                  <span className="text-sm font-body text-body/60">
                     {service}
                   </span>
                 </li>
@@ -119,18 +95,12 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom Bar */}
-        <div className="border-t border-ivory/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p
-            className="text-ivory/40 text-xs"
-            style={{ fontFamily: "var(--font-body)" }}
-          >
+        {/* Bottom bar */}
+        <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 border-t border-body/10">
+          <p className="text-xs font-body text-body/45">
             {tFooter("copyright")}
           </p>
-          <p
-            className="text-ivory/30 text-xs tracking-widest uppercase"
-            style={{ fontFamily: "var(--font-body)" }}
-          >
+          <p className="text-xs tracking-widest uppercase font-body text-body/30">
             {tFooter("tagline")}
           </p>
         </div>

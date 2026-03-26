@@ -1,9 +1,8 @@
 import { getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
+import Image from "next/image";
 import FadeIn from "@/components/animations/FadeIn";
 import Team from "@/components/sections/Team";
-import TheOpportunity from "@/components/sections/TheOpportunity";
-import TheSolution from "@/components/sections/TheSolution";
 
 interface AboutPageProps {
   params: Promise<{ locale: string }>;
@@ -23,157 +22,173 @@ export async function generateMetadata({
 export default async function AboutPage() {
   const t = await getTranslations("about");
 
-  const gapPoints = [
-    t("theGap.points.0"),
-    t("theGap.points.1"),
-    t("theGap.points.2"),
-  ];
-
-  const visionStatements = [
-    t("vision.statements.0"),
-    t("vision.statements.1"),
-    t("vision.statements.2"),
-  ];
-
   return (
     <>
-      {/* Hero */}
-      <section className="bg-cream pt-40 pb-20">
-        <div className="section-wrapper pt-0 pb-0">
+      {/* ── 1. HERO — same style as Projects page ────────────── */}
+      <section className="relative flex items-end pt-32 pb-14 md:pt-52 md:pb-28 overflow-hidden min-h-[45vh] md:min-h-[65vh]">
+        <Image
+          src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1920&q=80"
+          alt="Itibá Gastronomic Agency"
+          fill
+          className="object-cover object-center"
+          priority
+          unoptimized
+        />
+        <div className="absolute inset-0 bg-void/70" />
+        <div className="section-wrapper pt-0 pb-0 relative z-10 w-full">
           <FadeIn>
-            <span className="section-tag">{t("hero.tag")}</span>
+            <span className="section-tag text-gold/70">{t("hero.tag")}</span>
           </FadeIn>
           <FadeIn delay={0.1}>
-            <h1 className="heading-xl text-green-deep mt-4 max-w-3xl">
-              {t("hero.title")}
-            </h1>
+            <h2 className="heading-xl text-cream mt-4">{t("hero.title")}</h2>
           </FadeIn>
         </div>
       </section>
 
-      {/* Who We Are — bold green block */}
-      <section className="bg-green-deep">
-        <div className="section-wrapper">
-          <div className="max-w-3xl">
-            <FadeIn>
+      {/* ── 2. INTRO STATEMENT — centered, cream ─────────────── */}
+      <section className="bg-cream flex flex-col items-center justify-center py-30 px-6 text-center">
+        <FadeIn>
+          <p
+            className="font-heading font-light text-body max-w-3xl mx-auto"
+            style={{ fontSize: "clamp(1.1rem, 1.8vw, 1.5rem)", lineHeight: 1.7 }}
+          >
+            {t("intro")}
+          </p>
+          <div className="mt-10 mx-auto w-15 h-px bg-olive" />
+        </FadeIn>
+      </section>
+
+      {/* ── 3. EL VACÍO CREATIVO — image left, text right ────── */}
+      <section className="flex flex-col md:flex-row min-h-150">
+        {/* Image */}
+        <div className="relative w-full md:w-1/2 min-h-100 md:min-h-150">
+          <Image
+            src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=80"
+            alt={t("gap.eyebrow")}
+            fill
+            className="object-cover"
+            unoptimized
+          />
+        </div>
+        {/* Text */}
+        <div className="w-full md:w-1/2 bg-cream flex items-center">
+          <div className="py-20 px-8 md:px-18 max-w-xl">
+            <FadeIn inView>
               <span
-                className="text-xs font-medium tracking-[0.25em] uppercase text-gold"
-                style={{ fontFamily: "var(--font-body)" }}
+                className="block mb-4 uppercase tracking-[0.18em] text-olive"
+                style={{ fontFamily: "var(--font-body)", fontSize: "0.68rem" }}
               >
-                {t("whoWeAre.tag")}
+                {t("gap.eyebrow")}
               </span>
             </FadeIn>
-            <FadeIn delay={0.15}>
-              <p
-                className="mt-6 text-2xl md:text-3xl font-light text-ivory/90 leading-[1.65]"
-                style={{ fontFamily: "var(--font-heading)" }}
+            <FadeIn delay={0.1} inView>
+              <h2
+                className="font-heading font-normal text-red-accent mb-6"
+                style={{ fontSize: "clamp(1.4rem, 2.5vw, 2rem)", lineHeight: 1.2 }}
               >
-                {t("whoWeAre.description")}
+                {t("gap.title")}
+              </h2>
+            </FadeIn>
+            <FadeIn delay={0.2} inView>
+              <p
+                className="text-body leading-[1.8]"
+                style={{ fontFamily: "var(--font-body)", fontSize: "1rem" }}
+              >
+                {t("gap.body")}
               </p>
             </FadeIn>
           </div>
         </div>
       </section>
 
-      {/* Philosophy — Mission / Vision / Values */}
-      <section className="bg-ivory">
-        <div className="section-wrapper">
-          <FadeIn>
-            <span className="section-tag mb-12 block">{t("philosophy.tag")}</span>
-          </FadeIn>
-          <div>
-            {(["mission", "vision", "values"] as const).map((key, i) => (
-              <FadeIn key={key} delay={i * 0.1}>
-                <div className="border-t border-gold/20 py-10 grid md:grid-cols-3 gap-6 md:gap-12">
-                  <span
-                    className="text-xs font-medium tracking-[0.2em] uppercase text-olive self-start pt-1"
-                    style={{ fontFamily: "var(--font-body)" }}
-                  >
-                    {t(`philosophy.${key}.label`)}
-                  </span>
-                  <p
-                    className="md:col-span-2 text-xl md:text-2xl font-light text-green-deep leading-relaxed"
-                    style={{ fontFamily: "var(--font-heading)" }}
-                  >
-                    {t(`philosophy.${key}.text`)}
-                  </p>
-                </div>
-              </FadeIn>
-            ))}
-            <div className="border-t border-gold/20" />
+      {/* ── 4. LA OPORTUNIDAD — text left, image right ───────── */}
+      <section className="flex flex-col md:flex-row-reverse min-h-150">
+        {/* Image */}
+        <div className="relative w-full md:w-1/2 min-h-100 md:min-h-150">
+          <Image
+            src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1200&q=80"
+            alt={t("opportunity.eyebrow")}
+            fill
+            className="object-cover"
+            unoptimized
+          />
+        </div>
+        {/* Text */}
+        <div className="w-full md:w-1/2 bg-olive-dark flex items-center">
+          <div className="py-20 px-8 md:px-18 max-w-xl">
+            <FadeIn inView>
+              <span
+                className="block mb-4 uppercase tracking-[0.18em] text-cream/60"
+                style={{ fontFamily: "var(--font-body)", fontSize: "0.68rem" }}
+              >
+                {t("opportunity.eyebrow")}
+              </span>
+            </FadeIn>
+            <FadeIn delay={0.1} inView>
+              <h2
+                className="font-heading font-normal text-cream mb-6"
+                style={{ fontSize: "clamp(1.4rem, 2.5vw, 2rem)", lineHeight: 1.2 }}
+              >
+                {t("opportunity.title")}
+              </h2>
+            </FadeIn>
+            <FadeIn delay={0.2} inView>
+              <p
+                className="text-cream/85 leading-[1.8]"
+                style={{ fontFamily: "var(--font-body)", fontSize: "1rem" }}
+              >
+                {t("opportunity.body")}
+              </p>
+            </FadeIn>
           </div>
         </div>
       </section>
 
-      {/* The Gap — inline (different data structure: string points) */}
-      <section className="bg-cream">
-        <div className="section-wrapper">
-          <div className="mb-14">
-            <FadeIn>
-              <span className="section-tag">{t("theGap.tag")}</span>
+      {/* ── 5. LA SOLUCIÓN — image left, text right ──────────── */}
+      <section className="flex flex-col md:flex-row min-h-150">
+        {/* Image */}
+        <div className="relative w-full md:w-1/2 min-h-100 md:min-h-150">
+          <Image
+            src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=1200&q=80"
+            alt={t("solution.eyebrow")}
+            fill
+            className="object-cover"
+            unoptimized
+          />
+        </div>
+        {/* Text */}
+        <div className="w-full md:w-1/2 bg-brown flex items-center">
+          <div className="py-20 px-8 md:px-18 max-w-xl">
+            <FadeIn inView>
+              <span
+                className="block mb-4 uppercase tracking-[0.18em] text-cream/60"
+                style={{ fontFamily: "var(--font-body)", fontSize: "0.68rem" }}
+              >
+                {t("solution.eyebrow")}
+              </span>
             </FadeIn>
-            <FadeIn delay={0.1}>
-              <h2 className="heading-lg mt-4">{t("theGap.title")}</h2>
+            <FadeIn delay={0.1} inView>
+              <h2
+                className="font-heading font-normal text-cream mb-6"
+                style={{ fontSize: "clamp(1.4rem, 2.5vw, 2rem)", lineHeight: 1.2 }}
+              >
+                {t("solution.title")}
+              </h2>
             </FadeIn>
-          </div>
-          <div className="space-y-0">
-            {gapPoints.map((point, i) => (
-              <FadeIn key={i} delay={i * 0.1}>
-                <div className="border-t border-gold/20 py-8 flex items-start gap-5">
-                  <span
-                    className="shrink-0 text-xs font-medium tracking-widest text-gold/60 mt-2"
-                    style={{ fontFamily: "var(--font-body)" }}
-                  >
-                    0{i + 1}
-                  </span>
-                  <p
-                    className="text-xl md:text-2xl font-light text-green-deep leading-snug"
-                    style={{ fontFamily: "var(--font-heading)" }}
-                  >
-                    {point}
-                  </p>
-                </div>
-              </FadeIn>
-            ))}
-            <div className="border-t border-gold/20" />
+            <FadeIn delay={0.2} inView>
+              <p
+                className="text-cream/85 leading-[1.8]"
+                style={{ fontFamily: "var(--font-body)", fontSize: "1rem" }}
+              >
+                {t("solution.body")}
+              </p>
+            </FadeIn>
           </div>
         </div>
       </section>
 
-      {/* The Opportunity */}
-      <TheOpportunity translationKey="about.opportunity" />
-
-      {/* The Solution */}
-      <TheSolution translationKey="about.solution" />
-
-      {/* Team */}
+      {/* ── 6. TEAM ───────────────────────────────────────────── */}
       <Team />
-
-      {/* Vision & Impact */}
-      <section className="bg-cream">
-        <div className="section-wrapper">
-          <FadeIn>
-            <span className="section-tag">{t("vision.tag")}</span>
-            <h2 className="heading-lg mt-4 mb-14">{t("vision.title")}</h2>
-          </FadeIn>
-          <div>
-            {visionStatements.map((statement, i) => (
-              <FadeIn key={i} delay={i * 0.12}>
-                <div className="border-t border-gold/20 py-8 flex gap-5 items-start">
-                  <span className="mt-3 shrink-0 w-1.5 h-1.5 rounded-full bg-gold" />
-                  <p
-                    className="text-2xl md:text-3xl font-light text-green-deep leading-relaxed"
-                    style={{ fontFamily: "var(--font-heading)" }}
-                  >
-                    {statement}
-                  </p>
-                </div>
-              </FadeIn>
-            ))}
-            <div className="border-t border-gold/20" />
-          </div>
-        </div>
-      </section>
     </>
   );
 }

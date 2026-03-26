@@ -22,76 +22,78 @@ export default function Team() {
   }));
 
   return (
-    <section className="bg-ivory">
+    <section className="bg-cream">
       <div className="section-wrapper">
+        {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.6 }}
-          className="mb-12"
+          className="mb-16"
         >
           <span className="section-tag">{t("tag")}</span>
-          <h2 className="heading-lg mt-4">{t("title")}</h2>
+          <h2
+            className="mt-4 font-light font-heading text-red-accent"
+            style={{ fontSize: "clamp(1.75rem, 4vw, 3rem)", lineHeight: 1.2 }}
+          >
+            {t("title")}
+          </h2>
         </motion.div>
 
-        {/* 3-column grid — smaller, clean portraits */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+        {/* 3 cards */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-6">
           {members.map((member, i) => (
             <motion.div
               key={i}
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
-              transition={{ duration: 0.55, ease: "easeOut", delay: i * 0.1 }}
-              className="group"
+              transition={{ duration: 0.6, ease: "easeOut", delay: i * 0.12 }}
+              className="flex flex-col bg-white"
             >
-              {/* Portrait — square crop */}
-              <div className="relative aspect-square overflow-hidden mb-5">
+              {/* Photo */}
+              <div className="relative aspect-3/4 overflow-hidden">
                 <Image
                   src={memberImages[i]}
                   alt={member.name}
                   fill
-                  className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                  className="object-cover object-top transition-transform duration-700 hover:scale-105"
                   sizes="(max-width: 768px) 100vw, 33vw"
                 />
               </div>
 
               {/* Info */}
-              <span
-                className="text-xs font-medium tracking-widest uppercase text-olive"
-                style={{ fontFamily: "var(--font-body)" }}
-              >
-                {member.role}
-              </span>
-              <motion.h3
-                className="text-xl font-light text-green-deep mt-1 mb-0.5"
-                style={{ fontFamily: "var(--font-heading)" }}
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: 0.1 + i * 0.1 }}
-              >
-                {member.name}
-              </motion.h3>
-              <p
-                className="text-xs font-medium tracking-wider uppercase text-gold mb-4"
-                style={{ fontFamily: "var(--font-body)" }}
-              >
-                {member.title}
-              </p>
-              <p
-                className="text-sm text-green-deep/60 leading-relaxed mb-4"
-                style={{ fontFamily: "var(--font-body)" }}
-              >
-                {member.description}
-              </p>
-              <p
-                className="text-sm font-light text-green-deep/50 italic border-l border-gold/30 pl-3"
-                style={{ fontFamily: "var(--font-heading)" }}
-              >
-                &ldquo;{member.quote}&rdquo;
-              </p>
+              <div className="p-8 flex flex-col flex-1">
+                <span className="section-tag mb-3">{member.role}</span>
+
+                <h3
+                  className="font-light font-heading text-body mb-1"
+                  style={{ fontSize: "clamp(1.1rem, 1.6vw, 1.35rem)" }}
+                >
+                  {member.name}
+                </h3>
+
+                <p
+                  className="mb-5 uppercase tracking-wider text-olive"
+                  style={{ fontFamily: "var(--font-body)", fontSize: "0.65rem" }}
+                >
+                  {member.title}
+                </p>
+
+                <p
+                  className="text-sm text-body/60 leading-relaxed mb-5 flex-1"
+                  style={{ fontFamily: "var(--font-body)" }}
+                >
+                  {member.description}
+                </p>
+
+                {/* <p
+                  className="text-sm italic text-body/45 border-l-2 border-red-accent/30 pl-3 leading-relaxed font-heading"
+                >
+                  &ldquo;{member.quote}&rdquo;
+                </p> */}
+              </div>
             </motion.div>
           ))}
         </div>

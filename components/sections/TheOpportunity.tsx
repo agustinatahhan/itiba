@@ -4,7 +4,6 @@ import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 
 interface TheOpportunityProps {
-  /** Translation namespace — "home.opportunity" (default) or "about.opportunity" */
   translationKey?: string;
 }
 
@@ -20,7 +19,7 @@ export default function TheOpportunity({
   }));
 
   return (
-    <section className="bg-cream">
+    <section style={{ backgroundColor: "#efe8d7" }}>
       <div className="section-wrapper">
         <div className="max-w-xl mb-16">
           <motion.span
@@ -33,7 +32,13 @@ export default function TheOpportunity({
             {t("tag")}
           </motion.span>
           <motion.h2
-            className="heading-lg mt-4"
+            className="mt-4 font-light"
+            style={{
+              fontFamily: "var(--font-heading)",
+              fontSize: "clamp(1.75rem, 4vw, 3rem)",
+              color: "#951b0e",
+              lineHeight: 1.2,
+            }}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
@@ -43,8 +48,8 @@ export default function TheOpportunity({
           </motion.h2>
         </div>
 
-        {/* Stats — large, minimal */}
-        <div className="grid grid-cols-3 gap-px bg-gold/10">
+        {/* Stats — large, editorial */}
+        <div className="grid grid-cols-3 gap-px" style={{ backgroundColor: "rgba(98, 61, 42, 0.12)" }}>
           {stats.map((stat, i) => (
             <motion.div
               key={i}
@@ -52,17 +57,22 @@ export default function TheOpportunity({
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.55, ease: "easeOut", delay: i * 0.1 }}
-              className="bg-cream px-8 py-12"
+              className="px-8 py-12"
+              style={{ backgroundColor: "#efe8d7" }}
             >
               <div
-                className="text-4xl md:text-5xl lg:text-6xl font-light text-green-deep mb-3 leading-none"
-                style={{ fontFamily: "var(--font-heading)" }}
+                className="font-light leading-none mb-3"
+                style={{
+                  fontFamily: "var(--font-heading)",
+                  fontSize: "clamp(2.5rem, 5vw, 4rem)",
+                  color: "#3d2010",
+                }}
               >
                 {stat.value}
               </div>
               <p
-                className="text-xs text-olive tracking-wide leading-relaxed"
-                style={{ fontFamily: "var(--font-body)" }}
+                className="text-xs leading-relaxed tracking-wide"
+                style={{ fontFamily: "var(--font-body)", color: "#798463" }}
               >
                 {stat.label}
               </p>

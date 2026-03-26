@@ -68,8 +68,7 @@ export default function Hero() {
         {/* Title */}
         <motion.h1
           variants={itemVariants}
-          className="text-5xl md:text-7xl lg:text-8xl font-light text-ivory leading-none tracking-tight mb-8"
-          style={{ fontFamily: "var(--font-heading)" }}
+          className="text-5xl md:text-7xl lg:text-8xl font-light text-ivory leading-none tracking-tight mb-8 font-heading"
         >
           {titleLines.map((line, i) => (
             <span key={i} className="block">
@@ -81,8 +80,7 @@ export default function Hero() {
         {/* Subtitle */}
         <motion.p
           variants={itemVariants}
-          className="text-ivory/70 text-base md:text-lg leading-relaxed max-w-xl mx-auto mb-12"
-          style={{ fontFamily: "var(--font-body)" }}
+          className="text-ivory/70 text-base md:text-lg leading-relaxed max-w-xl mx-auto mb-12 font-body"
         >
           {t("subtitle")}
         </motion.p>
@@ -92,9 +90,9 @@ export default function Hero() {
           variants={itemVariants}
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
-          <Link href={`/${locale}/about`} className="btn-primary">
+          {/* <Link href={`/${locale}/about`} className="btn-primary">
             {t("cta1")}
-          </Link>
+          </Link> */}
           <Link href={`/${locale}/projects`} className="btn-outline-light">
             {t("cta2")}
           </Link>

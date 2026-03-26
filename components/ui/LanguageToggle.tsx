@@ -4,7 +4,11 @@ import { useLocale } from "next-intl";
 import { usePathname, useRouter } from "next/navigation";
 import { startTransition } from "react";
 
-export default function LanguageToggle() {
+interface LanguageToggleProps {
+  scrolled?: boolean;
+}
+
+export default function LanguageToggle({ scrolled = false }: LanguageToggleProps) {
   const locale = useLocale();
   const router = useRouter();
   const pathname = usePathname();
@@ -21,34 +25,30 @@ export default function LanguageToggle() {
 
   return (
     <div
-      className="flex items-center border border-gold/40 rounded-full p-0.5"
+      className={`flex items-center rounded-full p-0.5 border transition-colors duration-300 ${
+        scrolled ? "border-body/25" : "border-cream/30"
+      }`}
       role="group"
       aria-label="Language selector"
     >
-      <button
-        onClick={() => switchLocale("es")}
-        aria-label="Switch to Spanish"
-        className={`px-3 py-1 text-xs font-medium tracking-widest uppercase rounded-full transition-all duration-200 cursor-pointer ${
-          locale === "es"
-            ? "bg-green-deep text-cream"
-            : "text-green-deep hover:text-green-deep/70"
-        }`}
-        style={{ fontFamily: "var(--font-body)" }}
-      >
-        ES
-      </button>
-      <button
-        onClick={() => switchLocale("en")}
-        aria-label="Switch to English"
-        className={`px-3 py-1 text-xs font-medium tracking-widest uppercase rounded-full transition-all duration-200 cursor-pointer ${
-          locale === "en"
-            ? "bg-green-deep text-cream"
-            : "text-green-deep hover:text-green-deep/70"
-        }`}
-        style={{ fontFamily: "var(--font-body)" }}
-      >
-        EN
-      </button>
+      {(["es", "en"] as const).map((lang) => (
+        <button
+          key={lang}
+          onClick={() => switchLocale(lang)}
+          aria-label={lang === "es" ? "Switch to Spanish" : "Switch to English"}
+          className={`px-3 py-1 text-xs font-medium tracking-widest uppercase rounded-full transition-all duration-200 cursor-pointer font-body ${
+            scrolled
+              ? locale === lang
+                ? "bg-body text-cream"
+                : "bg-transparent text-body/50"
+              : locale === lang
+              ? "bg-cream text-brown"
+              : "bg-transparent text-cream/55"
+          }`}
+        >
+          {lang.toUpperCase()}
+        </button>
+      ))}
     </div>
   );
 }

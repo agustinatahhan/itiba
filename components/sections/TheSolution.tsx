@@ -5,7 +5,6 @@ import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 
 interface TheSolutionProps {
-  /** Translation namespace — "home.solution" (default) or "about.solution" */
   translationKey?: string;
 }
 
@@ -22,9 +21,9 @@ export default function TheSolution({
   }));
 
   return (
-    <section className="bg-ivory">
+    <section style={{ backgroundColor: "#efe8d7" }}>
       <div className="section-wrapper">
-        {/* Header + editorial portrait image */}
+        {/* Header + image */}
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-16">
           <div>
             <motion.span
@@ -37,7 +36,13 @@ export default function TheSolution({
               {t("tag")}
             </motion.span>
             <motion.h2
-              className="heading-lg mt-4"
+              className="mt-4 font-light"
+              style={{
+                fontFamily: "var(--font-heading)",
+                fontSize: "clamp(1.75rem, 4vw, 3rem)",
+                color: "#951b0e",
+                lineHeight: 1.2,
+              }}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
@@ -59,7 +64,7 @@ export default function TheSolution({
         </div>
 
         {/* Pillars */}
-        <div className="grid md:grid-cols-3 gap-0.5 bg-gold/10">
+        <div className="grid md:grid-cols-3 gap-px" style={{ backgroundColor: "rgba(98, 61, 42, 0.12)" }}>
           {pillars.map((pillar, i) => (
             <motion.div
               key={i}
@@ -67,23 +72,30 @@ export default function TheSolution({
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.5, ease: "easeOut", delay: i * 0.1 }}
-              className="bg-ivory px-8 py-10 group hover:bg-cream transition-colors duration-300"
+              className="px-8 py-10 group transition-colors duration-300"
+              style={{ backgroundColor: "#efe8d7" }}
+              onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#e5dcc8")}
+              onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#efe8d7")}
             >
               <div
-                className="text-4xl font-light text-gold/25 mb-6 group-hover:text-gold/50 transition-colors duration-300"
-                style={{ fontFamily: "var(--font-heading)" }}
+                className="font-light mb-6 leading-none select-none"
+                style={{
+                  fontFamily: "var(--font-heading)",
+                  fontSize: "3rem",
+                  color: "rgba(61, 32, 16, 0.12)",
+                }}
               >
                 {pillar.number}
               </div>
               <h3
-                className="text-lg font-light text-green-deep mb-2"
-                style={{ fontFamily: "var(--font-heading)" }}
+                className="font-light mb-2"
+                style={{ fontFamily: "var(--font-heading)", fontSize: "1.2rem", color: "#3d2010" }}
               >
                 {pillar.title}
               </h3>
               <p
-                className="text-sm text-green-deep/60 leading-relaxed"
-                style={{ fontFamily: "var(--font-body)" }}
+                className="text-sm leading-relaxed"
+                style={{ fontFamily: "var(--font-body)", color: "rgba(61, 32, 16, 0.6)" }}
               >
                 {pillar.description}
               </p>

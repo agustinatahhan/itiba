@@ -1,7 +1,7 @@
 {
   "nav": {
     "home": "Home",
-    "about": "About Us",
+    "about": "About Itibá",
     "projects": "Projects",
     "contact": "Contact"
   },
@@ -18,6 +18,23 @@
     "description": "We connect visionary chefs with the tools and strategies they need to thrive."
   },
   "home": {
+    "storyTeaser": {
+      "items": [
+        {
+          "tag": "The gap",
+          "headline": "Today's hospitality industry faces a disconnect between cultural heritage and commercial execution. Brands struggle to tell compelling, sustainable stories that truly resonate."
+        },
+        {
+          "tag": "The opportunity",
+          "headline": "There is a growing demand for immersive, authentic experiences. We bridge the gap for cultural consumers and hospitality businesses through a holistic, strategic approach."
+        },
+        {
+          "tag": "The solution",
+          "headline": "We connect gastronomy, culture, and sustainability. Through culinary architecture and creative storytelling, we design the future of large-scale experiential events."
+        }
+      ],
+      "cta": "Discover more"
+    },
     "whoWeAre": {
       "tag": "Who we are",
       "description": "Itibá is a culinary innovation studio and creative agency. We design and execute gastronomic experiences, strategies, and brand moments that merge heritage, sustainability, and creativity — delivering measurable results and sustainable growth."
@@ -92,7 +109,7 @@
   },
   "services": {
     "tag": "Our DNA",
-    "title": "The five pillars of Itibá",
+    "title": "Five-pronged model:",
     "viewAll": "Explore services",
     "items": [
       {
@@ -129,66 +146,23 @@
     },
     "hero": {
       "tag": "About Us",
-      "title": "An agency built from inside the industry"
+      "title": "About Itibá"
     },
-    "whoWeAre": {
-      "tag": "Who we are",
-      "title": "Born to transform gastronomy",
-      "description": "Itibá connects exceptional culinary talent with the strategies and tools to achieve sustainable success. We are bridge, catalyst, and amplifier of talent that deserves to be seen."
-    },
-    "philosophy": {
-      "tag": "Philosophy",
-      "mission": {
-        "label": "Mission",
-        "text": "Transform culinary talent into projects with identity, purpose, and sustainable legacy."
-      },
-      "vision": {
-        "label": "Vision",
-        "text": "To be the reference agency for Latin American gastronomy in the world."
-      },
-      "values": {
-        "label": "Values",
-        "text": "Cultural authenticity, technical excellence, responsible sustainability, and innovation with roots."
-      }
-    },
-    "theGap": {
-      "tag": "The problem",
-      "title": "A critical gap in the industry",
-      "points": [
-        "Talented chefs lack solid business structures",
-        "Investors have no visibility into verified culinary opportunities",
-        "Gastronomic brands struggle to build authentic narratives"
-      ]
+    "intro": "Itibá is a culinary innovation studio and creative agency. We design and execute gastronomic experiences, strategies, and brand moments that merge heritage, sustainability, and creativity — delivering measurable results and sustainable growth.",
+    "gap": {
+      "eyebrow": "The Creative Gap",
+      "title": "The industry faces a disconnect",
+      "body": "Heritage, sustainability and authenticity remain fragmented. Brands and hospitality struggle to tell compelling stories through gastronomy. A lack of intergenerational solutions to meet the demand for holistic service."
     },
     "opportunity": {
-      "tag": "The opportunity",
-      "title": "A rapidly expanding market",
-      "stats": [
-        { "value": "$8.1B", "label": "Global gastronomic media market" },
-        { "value": "$36.5B", "label": "Culinary events and experiences industry" },
-        { "value": "$40B+", "label": "Projected market size by 2030" }
-      ]
+      "eyebrow": "The Opportunity",
+      "title": "The Opportunity",
+      "body": "Growing consumer interest in culinary authenticity and sustainable practices. Itibá grows from a holistic approach to meet the demand of cultural consumers, hospitality businesses, and corporate clients."
     },
     "solution": {
-      "tag": "The solution",
-      "title": "Three pillars of transformation",
-      "pillars": [
-        {
-          "number": "01",
-          "title": "Architectural Culinary Expertise",
-          "description": "Concepts with technical depth and artistic vision."
-        },
-        {
-          "number": "02",
-          "title": "Creative Storytelling",
-          "description": "Stories that make a culinary brand memorable."
-        },
-        {
-          "number": "03",
-          "title": "Strategic Financial Expertise",
-          "description": "Profitable and sustainable business models."
-        }
-      ]
+      "eyebrow": "The Solution",
+      "title": "The Solution",
+      "body": "Itibá connects gastronomy, culture and sustainability. We combine Culinary Architecture, Creative Narrative and Financial Strategy to transform gastronomic talent into lasting legacy."
     },
     "team": {
       "tag": "The team",
@@ -196,34 +170,25 @@
       "members": [
         {
           "name": "Dayanny De La Cruz",
-          "title": "Chef & CEO",
+          "title": "Chief Executive Officer (CEO)",
           "role": "Culinary visionary",
-          "description": "Chef with over 15 years in international luxury gastronomy. Founder and creative voice of Itibá.",
+          "description": "Executive Leadership, Culinary Architecture, and Social Impact Vision.",
           "quote": "Gastronomy is the most honest language that exists."
         },
         {
           "name": "Noelia Caccavelli",
-          "title": "CCO — Chief Creative Officer",
+          "title": "Chief Creative Officer (CCO)",
           "role": "Narrative architect",
-          "description": "Expert in brand storytelling and creative strategy for the gastronomic sector.",
+          "description": "Brand Creative Vision, Storytelling, and Foundational Concept Development",
           "quote": "Every brand has a story that deserves to be told with precision."
         },
         {
           "name": "Oneida Franco",
-          "title": "COO — Chief Operating Officer",
+          "title": "Chief Operating Officer (COO)",
           "role": "Financial strategist",
-          "description": "Specialist in operations and financial strategy for culinary businesses.",
+          "description": "Operations, Growth Strategy, and Financial Sustainability",
           "quote": "Sustainability is financial, operational, and human."
         }
-      ]
-    },
-    "vision": {
-      "tag": "Vision & impact",
-      "title": "Where we're headed",
-      "statements": [
-        "Elevate the standard of Latin American gastronomy on a global stage",
-        "Create ecosystems where culinary talent thrives without limits",
-        "Build the future of gastronomy with purpose and excellence"
       ]
     }
   },

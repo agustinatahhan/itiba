@@ -1,6 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
 import Hero from "@/components/sections/Hero";
+import StoryTeaser from "@/components/sections/StoryTeaser";
 import WhoWeAre from "@/components/sections/WhoWeAre";
 import Services from "@/components/sections/Services";
 import ProjectsPreview from "@/components/sections/ProjectsPreview";
@@ -27,9 +28,10 @@ export default async function HomePage() {
     <>
       <Hero />
       <WhoWeAre />
+      <StoryTeaser />
       <Services />
       <ProjectsPreview />
-      <ImpactVision />
+      {/* <ImpactVision /> */}
       <AboutPreview />
     </>
   );
