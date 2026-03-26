@@ -6,10 +6,9 @@ import { useTranslations } from "next-intl";
 import { motion, AnimatePresence } from "framer-motion";
 
 const IMAGES = [
-  { src: "/images/home/mofongo.jpeg", alt: "Mofongo dominicano" },
-  { src: "/images/home/pollo.png", alt: "Plato de pollo" },
-  { src: "/images/home/sancocho.png", alt: "Sancocho" },
-  { src: "/images/home/yaniqueque.jpeg", alt: "Yaniqueque" },
+  { src: "/images/home/1.jpeg", alt: "" },
+  { src: "/images/home/2.jpeg", alt: "" },
+  { src: "/images/home/3.jpeg", alt: "" },
 ];
 
 export default function Services() {
@@ -55,11 +54,11 @@ export default function Services() {
 
       {/* Left — solid olive background with pillars */}
       <div className="bg-olive-dark order-first lg:order-0">
-        <div className="px-10 lg:px-14 py-14 ">
+        <div className="px-10 lg:px-14 py-15">
           {/* Header */}
-          <div className="mb-10">
+          <div className="mb-6">
             <motion.span
-              className="text-xs font-medium tracking-[0.18em] uppercase text-cream/60 font-body"
+              className="section-tag block text-cream/60"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
@@ -68,8 +67,7 @@ export default function Services() {
               {t("tag")}
             </motion.span>
             <motion.h2
-              className="mt-3 font-light font-heading text-cream"
-              style={{ fontSize: "clamp(1.6rem, 3vw, 2.5rem)", lineHeight: 1.15 }}
+              className="mt-2 font-heading text-cream"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
@@ -84,15 +82,14 @@ export default function Services() {
             {items.map((item, i) => (
               <div
                 key={i}
-                className="flex items-start gap-5 py-5"
+                className="flex items-start gap-4 py-3"
                 style={{
                   borderTop: i === 0 ? "none" : "1px solid rgba(121, 132, 99, 0.3)",
                 }}
               >
                 {/* Number */}
                 <span
-                  className="shrink-0 font-light leading-none select-none mt-0.5 font-heading text-cream/25"
-                  style={{ fontSize: "2rem" }}
+                  className="shrink-0 font-light leading-none select-none mt-0.5 font-heading text-cream/25 text-[1.4rem]"
                 >
                   {item.number}
                 </span>
@@ -100,8 +97,7 @@ export default function Services() {
                 {/* Title + description */}
                 <div>
                   <motion.h3
-                    className="font-medium font-heading text-cream"
-                    style={{ fontSize: "clamp(1rem, 1.5vw, 1.25rem)" }}
+                    className="font-heading text-cream"
                     initial={{ opacity: 0, y: 8 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, margin: "-40px" }}
@@ -110,7 +106,7 @@ export default function Services() {
                     {item.title}
                   </motion.h3>
                   <motion.p
-                    className="text-sm mt-1 leading-relaxed font-body text-cream/60"
+                    className="mt-1 font-body text-cream/60"
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true, margin: "-40px" }}

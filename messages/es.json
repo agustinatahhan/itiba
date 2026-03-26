@@ -18,22 +18,23 @@
     "description": "Conectamos chefs visionarios con las herramientas y estrategias que necesitan para prosperar."
   },
   "home": {
-    "storyTeaser": {
-      "items": [
+    "manifesto": {
+      "eyebrow": "Por qué existimos",
+      "cta": "Conocé nuestra historia",
+      "cards": [
         {
-          "tag": "El vacío creativo",
-          "headline": "La hospitalidad actual enfrenta una desconexión entre la herencia cultural y la ejecución comercial. Las marcas luchan por contar historias que resuenen de forma auténtica y sostenible."
+          "title": "El Vacío Creativo",
+          "body": "La hospitalidad enfrenta una desconexión entre herencia cultural y ejecución comercial. Las marcas luchan por contar historias que resuenen de forma auténtica."
         },
         {
-          "tag": "La oportunidad",
-          "headline": "Existe una demanda creciente de experiencias inmersivas. Unimos a consumidores culturales y negocios de hospitalidad a través de un enfoque holístico que transforma la gastronomía en un activo estratégico."
+          "title": "La Oportunidad",
+          "body": "Existe una demanda creciente de experiencias inmersivas. Unimos consumidores culturales y negocios de hospitalidad a través de un enfoque estratégico y holístico."
         },
         {
-          "tag": "La solución",
-          "headline": "Conectamos gastronomía, cultura y sostenibilidad. Mediante arquitectura culinaria y narrativa creativa, diseñamos el futuro de las experiencias experienciales de gran escala."
+          "title": "La Solución",
+          "body": "Conectamos gastronomía, cultura y sostenibilidad. Mediante arquitectura culinaria y narrativa creativa, diseñamos el futuro de las experiencias de gran escala."
         }
-      ],
-      "cta": "Conoce Más"
+      ]
     },
     "whoWeAre": {
       "tag": "Quiénes somos",
@@ -108,7 +109,7 @@
     }
   },
   "services": {
-    "tag": "Nuestro ADN",
+    "tag": "Nuestro ADN y Servicios",
     "title": "Modelo de cinco ejes:",
     "viewAll": "Explorar servicios",
     "items": [

@@ -22,7 +22,7 @@ export default function Team() {
   }));
 
   return (
-    <section className="bg-cream">
+    <section className="bg-cream/50">
       <div className="section-wrapper">
         {/* Header */}
         <motion.div
@@ -76,14 +76,14 @@ export default function Team() {
 
                 <p
                   className="mb-5 uppercase tracking-wider text-olive"
-                  style={{ fontFamily: "var(--font-body)", fontSize: "0.65rem" }}
+                  style={{ fontFamily: "var(--font-body)", fontSize: "0.85rem" }}
                 >
                   {member.title}
                 </p>
 
                 <p
-                  className="text-sm text-body/60 leading-relaxed mb-5 flex-1"
-                  style={{ fontFamily: "var(--font-body)" }}
+                  className="text-body/60 leading-relaxed mb-5 flex-1"
+                  style={{ fontFamily: "var(--font-body)", fontSize: "1.05rem" }}
                 >
                   {member.description}
                 </p>

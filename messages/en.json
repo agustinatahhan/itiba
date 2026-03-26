@@ -18,22 +18,23 @@
     "description": "We connect visionary chefs with the tools and strategies they need to thrive."
   },
   "home": {
-    "storyTeaser": {
-      "items": [
+    "manifesto": {
+      "eyebrow": "Why we exist",
+      "cta": "Our story",
+      "cards": [
         {
-          "tag": "The gap",
-          "headline": "Today's hospitality industry faces a disconnect between cultural heritage and commercial execution. Brands struggle to tell compelling, sustainable stories that truly resonate."
+          "title": "The Gap",
+          "body": "Today's hospitality industry faces a disconnect between cultural heritage and commercial execution. Brands struggle to tell compelling, sustainable stories."
         },
         {
-          "tag": "The opportunity",
-          "headline": "There is a growing demand for immersive, authentic experiences. We bridge the gap for cultural consumers and hospitality businesses through a holistic, strategic approach."
+          "title": "The Opportunity",
+          "body": "There is a growing demand for immersive experiences. We bridge cultural consumers and hospitality businesses through a holistic, strategic approach."
         },
         {
-          "tag": "The solution",
-          "headline": "We connect gastronomy, culture, and sustainability. Through culinary architecture and creative storytelling, we design the future of large-scale experiential events."
+          "title": "The Solution",
+          "body": "We connect gastronomy, culture, and sustainability. Through culinary architecture and creative storytelling, we design the future of large-scale experiential events."
         }
-      ],
-      "cta": "Discover more"
+      ]
     },
     "whoWeAre": {
       "tag": "Who we are",
@@ -108,7 +109,7 @@
     }
   },
   "services": {
-    "tag": "Our DNA",
+    "tag": "Our DNA & Services",
     "title": "Five-pronged model:",
     "viewAll": "Explore services",
     "items": [

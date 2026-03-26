@@ -29,8 +29,7 @@ export default function ProjectsPreview() {
               {t("tag")}
             </motion.span>
             <motion.h2
-              className="mt-3 font-light font-heading text-red-accent"
-              style={{ fontSize: "clamp(1.75rem, 4vw, 3rem)", lineHeight: 1.2 }}
+              className="mt-3 font-heading text-red-accent"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
@@ -47,7 +46,7 @@ export default function ProjectsPreview() {
           >
             <Link
               href={`/${locale}/projects`}
-              className="flex items-center gap-2 text-xs font-medium tracking-widest uppercase group transition-colors text-olive hover:text-brown font-body"
+              className="nav-link flex items-center gap-2 font-medium uppercase group transition-colors text-olive hover:text-brown"
             >
               {t("viewAll")}
               <HiArrowRight size={13} className="transition-transform group-hover:translate-x-1" />
@@ -62,11 +61,15 @@ export default function ProjectsPreview() {
             const category = locale === "es" ? project.category.es : project.category.en;
 
             return (
-              <article
+              <motion.article
                 key={project.id}
                 className={`relative overflow-hidden group cursor-pointer ${
                   i === 0 ? "lg:col-span-2 lg:row-span-2 min-h-100 lg:min-h-0" : "min-h-65 lg:min-h-0"
                 }`}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true, margin: "-40px" }}
+                transition={{ duration: 0.6, delay: i * 0.12 }}
               >
                 {/* Photo */}
                 <Image
@@ -86,30 +89,17 @@ export default function ProjectsPreview() {
                   }}
                 />
 
-                {/* Content — text animations here */}
+                {/* Content */}
                 <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
-                  <motion.span
-                    className="text-[0.6rem] font-medium tracking-[0.22em] uppercase block mb-2 text-olive font-body"
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    viewport={{ once: true, margin: "-40px" }}
-                    transition={{ duration: 0.5, delay: i * 0.1 }}
-                  >
+                  <span className="section-tag block mb-2 text-olive">
                     {category}
-                  </motion.span>
-                  <motion.h3
-                    className="font-light leading-snug mb-4 text-cream font-heading"
-                    style={{ fontSize: i === 0 ? "clamp(1.25rem, 2.5vw, 2rem)" : "1.2rem" }}
-                    initial={{ opacity: 0, y: 12 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, margin: "-40px" }}
-                    transition={{ duration: 0.55, ease: "easeOut", delay: i * 0.1 + 0.1 }}
-                  >
+                  </span>
+                  <h3 className="leading-snug mb-4 text-cream font-heading">
                     {title}
-                  </motion.h3>
+                  </h3>
                   <Link
                     href={`/${locale}/projects`}
-                    className="flex items-center gap-2 text-xs font-medium tracking-widest uppercase group/link transition-opacity opacity-70 hover:opacity-100 text-cream font-body"
+                    className="nav-link flex items-center gap-2 font-medium uppercase group/link transition-opacity opacity-70 hover:opacity-100 text-cream"
                   >
                     {t("viewMore")}
                     <HiArrowRight
@@ -118,7 +108,7 @@ export default function ProjectsPreview() {
                     />
                   </Link>
                 </div>
-              </article>
+              </motion.article>
             );
           })}
         </div>

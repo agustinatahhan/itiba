@@ -46,7 +46,7 @@ export default async function AboutPage() {
       </section>
 
       {/* ── 2. INTRO STATEMENT — centered, cream ─────────────── */}
-      <section className="bg-cream flex flex-col items-center justify-center py-30 px-6 text-center">
+      <section className="bg-white flex flex-col items-center justify-center py-30 px-6 text-center">
         <FadeIn>
           <p
             className="font-heading font-light text-body max-w-3xl mx-auto"
@@ -71,7 +71,7 @@ export default async function AboutPage() {
           />
         </div>
         {/* Text */}
-        <div className="w-full md:w-1/2 bg-cream flex items-center">
+        <div className="w-full md:w-1/2 bg-cream/50 flex items-center">
           <div className="py-20 px-8 md:px-18 max-w-xl">
             <FadeIn inView>
               <span

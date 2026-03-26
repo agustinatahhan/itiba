@@ -37,7 +37,7 @@ export default function Footer() {
             <div className="mb-4">
             <Image src="/images/logo/logoitibadark.png" alt="Logo Itibá" width={200} height={200}/>
             </div>
-            <p className="text-sm leading-relaxed max-w-xs mt-4 font-body text-body/60">
+            <p className="leading-relaxed max-w-xs mt-4 font-body text-body/60" style={{ fontSize: "0.95rem" }}>
               {tFooter("description")}
             </p>
             <div className="flex gap-3 mt-6">
@@ -61,7 +61,7 @@ export default function Footer() {
 
           {/* Navigation */}
           <div>
-            <h3 className="text-xs font-medium tracking-widest uppercase mb-6 font-body text-olive">
+            <h3 className="font-medium tracking-widest uppercase mb-6 font-body text-olive" style={{ fontSize: "0.85rem" }}>
               {tFooter("navTitle")}
             </h3>
             <ul className="space-y-3">
@@ -69,7 +69,8 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm transition-colors font-body text-body/60 hover:text-body"
+                    className="transition-colors font-body text-body/60 hover:text-body"
+                    style={{ fontSize: "0.95rem" }}
                   >
                     {link.label}
                   </Link>
@@ -80,13 +81,13 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h3 className="text-xs font-medium tracking-widest uppercase mb-6 font-body text-olive">
+            <h3 className="font-medium tracking-widest uppercase mb-6 font-body text-olive" style={{ fontSize: "0.85rem" }}>
               {tFooter("servicesTitle")}
             </h3>
             <ul className="space-y-3">
               {serviceLinks.map((service) => (
                 <li key={service}>
-                  <span className="text-sm font-body text-body/60">
+                  <span className="font-body text-body/60" style={{ fontSize: "0.95rem" }}>
                     {service}
                   </span>
                 </li>
@@ -97,10 +98,10 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 border-t border-body/10">
-          <p className="text-xs font-body text-body/45">
+          <p className="font-body text-body/45" style={{ fontSize: "0.95rem" }}>
             {tFooter("copyright")}
           </p>
-          <p className="text-xs tracking-widest uppercase font-body text-body/30">
+          <p className="tracking-widest uppercase font-body text-body/30" style={{ fontSize: "0.95rem" }}>
             {tFooter("tagline")}
           </p>
         </div>

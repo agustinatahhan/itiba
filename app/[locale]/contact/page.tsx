@@ -55,7 +55,7 @@ export default async function ContactPage() {
       </section>
 
       {/* Contact Content */}
-      <section className="bg-cream">
+      <section className="bg-white">
         <div className="section-wrapper">
           <div className="grid md:grid-cols-2 gap-16 lg:gap-24">
             {/* Left: Info */}

@@ -46,8 +46,7 @@ export default function ImpactVision() {
         </motion.span>
 
         <motion.h2
-          className="mt-4 mb-10 font-light uppercase tracking-wide font-heading text-olive"
-          style={{ fontSize: "clamp(1.5rem, 2.8vw, 2.25rem)", lineHeight: 1.25 }}
+          className="mt-4 mb-10 uppercase tracking-wide font-heading text-olive"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
@@ -67,16 +66,15 @@ export default function ImpactVision() {
                 {String(i + 1).padStart(2, "0")}
               </span>
               <div className="shrink-0 mt-[0.6rem] w-8 h-px bg-red-accent" />
-              <motion.p
+              <motion.div
                 className="font-medium leading-snug font-heading text-body"
-                style={{ fontSize: "clamp(1rem, 1.6vw, 1.3rem)" }}
                 initial={{ opacity: 0, x: 12 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, margin: "-60px" }}
                 transition={{ duration: 0.5, ease: "easeOut", delay: 0.15 + i * 0.1 }}
               >
                 {point}
-              </motion.p>
+              </motion.div>
             </div>
           ))}
         </div>

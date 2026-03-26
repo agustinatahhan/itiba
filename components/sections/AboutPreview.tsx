@@ -25,13 +25,13 @@ export default function AboutPreview() {
 
       {/* Near-black warm overlay */}
       <div
-        className="absolute inset-0 bg-void/65"
+        className="absolute inset-0 bg-void/55"
       />
 
       {/* Centered content */}
       <div className="relative z-10 text-center px-8 max-w-2xl mx-auto">
         <motion.span
-          className="text-xs font-medium tracking-[0.22em] uppercase block mb-6 text-olive font-body"
+          className="font-medium tracking-[0.22em] uppercase block mb-6 text-olive font-body text-[0.85rem]"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
@@ -41,11 +41,7 @@ export default function AboutPreview() {
         </motion.span>
 
         <motion.h2
-          className="font-light mb-6 font-heading text-cream"
-          style={{
-            fontSize: "clamp(1.75rem, 4vw, 3rem)",
-            lineHeight: 1.2,
-          }}
+          className="mb-6 font-heading text-cream"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
@@ -55,7 +51,7 @@ export default function AboutPreview() {
         </motion.h2>
 
         <motion.p
-          className="text-base leading-relaxed mb-10 font-body text-cream/65"
+          className="mb-10 font-body text-cream/65"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
@@ -64,17 +60,13 @@ export default function AboutPreview() {
           {t("description")}
         </motion.p>
 
-        {/* Inverted CTA: cream bg + brown text */}
         <motion.div
           initial={{ opacity: 0, y: 8 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.3 }}
         >
-          <Link
-            href={`/${locale}/about`}
-            className="inline-flex items-center gap-3 text-xs font-medium tracking-[0.18em] uppercase px-8 py-4 transition-all duration-300 bg-cream text-brown hover:bg-cream/85 font-body"
-          >
+          <Link href={`/${locale}/about`} className="btn-outline-light">
             {t("cta")}
           </Link>
         </motion.div>

@@ -40,6 +40,32 @@
     font-family: var(--font-heading);
   }
 
+  h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.3;
+  }
+
+  h4 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family: var(--font-body);
+    line-height: 1.4;
+  }
+
+  p {
+    font-size: 1.05rem;
+    font-weight: 400;
+    line-height: 1.8;
+    font-family: var(--font-body);
+  }
+
   ::selection {
     background-color: #623d2a;
     color: #efe8d7;
@@ -70,11 +96,24 @@
   .section-tag {
     display: inline-block;
     font-family: var(--font-body);
-    font-size: 0.65rem;
+    font-size: 0.75rem;
     font-weight: 500;
-    letter-spacing: 0.18em;
+    letter-spacing: 0.16em;
     text-transform: uppercase;
     color: #798463;
+  }
+
+  /* Footer text */
+  .footer-text {
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+  }
+
+  /* Nav links */
+  .nav-link {
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
   }
 
   /* Display headings */
@@ -106,8 +145,8 @@
 
   .body-text {
     font-family: var(--font-body);
-    font-size: 1rem;
-    line-height: 1.75;
+    font-size: 1.05rem;
+    line-height: 1.8;
     color: #3d2010;
     opacity: 0.75;
   }
@@ -121,9 +160,9 @@
     background-color: #623d2a;
     color: #efe8d7;
     font-family: var(--font-body);
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-weight: 500;
-    letter-spacing: 0.18em;
+    letter-spacing: 0.12em;
     text-transform: uppercase;
     border: 1px solid #623d2a;
     cursor: pointer;
@@ -143,9 +182,9 @@
     background-color: transparent;
     color: #623d2a;
     font-family: var(--font-body);
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-weight: 500;
-    letter-spacing: 0.18em;
+    letter-spacing: 0.12em;
     text-transform: uppercase;
     border: 1px solid #623d2a;
     cursor: pointer;
@@ -157,7 +196,7 @@
     color: #efe8d7;
   }
 
-  /* Used by Hero — cream border + cream text on dark overlay */
+  /* Used by Hero & AboutPreview — cream border + cream text on dark overlay */
   .btn-outline-light {
     display: inline-flex;
     align-items: center;
@@ -166,9 +205,9 @@
     background-color: transparent;
     color: #efe8d7;
     font-family: var(--font-body);
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-weight: 500;
-    letter-spacing: 0.18em;
+    letter-spacing: 0.12em;
     text-transform: uppercase;
     border: 1px solid rgba(239, 232, 215, 0.45);
     cursor: pointer;
