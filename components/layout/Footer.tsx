@@ -60,7 +60,7 @@ export default function Footer() {
           </div>
 
           {/* Navigation */}
-          <div>
+          {/* <div>
             <h3 className="font-medium tracking-widest uppercase mb-6 font-body text-olive" style={{ fontSize: "0.85rem" }}>
               {tFooter("navTitle")}
             </h3>
@@ -77,10 +77,10 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
 
           {/* Services */}
-          <div>
+          {/* <div>
             <h3 className="font-medium tracking-widest uppercase mb-6 font-body text-olive" style={{ fontSize: "0.85rem" }}>
               {tFooter("servicesTitle")}
             </h3>
@@ -93,7 +93,7 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
         </div>
 
         {/* Bottom bar */}

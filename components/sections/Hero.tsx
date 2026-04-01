@@ -32,7 +32,7 @@ export default function Hero() {
     <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <Image
-        src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1920&q=80"
+        src="/images/home/bg2.jpg"
         alt="Fine dining restaurant ambiance"
         fill
         priority
@@ -41,7 +41,7 @@ export default function Hero() {
       />
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-green-deep/65" />
+      <div className="absolute inset-0 bg-green-deep/55" />
 
       {/* Content */}
       <motion.div

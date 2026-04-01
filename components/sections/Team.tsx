@@ -34,8 +34,7 @@ export default function Team() {
         >
           <span className="section-tag">{t("tag")}</span>
           <h2
-            className="mt-4 font-light font-heading text-red-accent"
-            style={{ fontSize: "clamp(1.75rem, 4vw, 3rem)", lineHeight: 1.2 }}
+            className="mt-4 font-heading text-red-accent"
           >
             {t("title")}
           </h2>
@@ -68,15 +67,13 @@ export default function Team() {
                 <span className="section-tag mb-3">{member.role}</span>
 
                 <h3
-                  className="font-light font-heading text-body mb-1"
-                  style={{ fontSize: "clamp(1.1rem, 1.6vw, 1.35rem)" }}
+                  className="font-heading text-body mb-1"
                 >
                   {member.name}
                 </h3>
 
                 <p
-                  className="mb-5 uppercase tracking-wider text-olive"
-                  style={{ fontFamily: "var(--font-body)", fontSize: "0.85rem" }}
+                  className="mb-5 uppercase tracking-wider text-olive section-tag"
                 >
                   {member.title}
                 </p>

@@ -6,9 +6,9 @@ import { useTranslations } from "next-intl";
 import { motion, AnimatePresence } from "framer-motion";
 
 const IMAGES = [
-  { src: "/images/home/1.jpeg", alt: "" },
-  { src: "/images/home/2.jpeg", alt: "" },
-  { src: "/images/home/3.jpeg", alt: "" },
+  { src: "/images/home/01.jpg", alt: "" },
+  { src: "/images/home/03.jpg", alt: "" },
+  { src: "/images/home/04.jpg", alt: "" },
 ];
 
 export default function Services() {

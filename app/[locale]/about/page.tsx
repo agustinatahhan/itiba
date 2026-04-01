@@ -27,18 +27,18 @@ export default async function AboutPage() {
       {/* ── 1. HERO — same style as Projects page ────────────── */}
       <section className="relative flex items-end pt-32 pb-14 md:pt-52 md:pb-28 overflow-hidden min-h-[45vh] md:min-h-[65vh]">
         <Image
-          src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1920&q=80"
+          src="/images/home/07.jpg"
           alt="Itibá Gastronomic Agency"
           fill
           className="object-cover object-center"
           priority
           unoptimized
         />
-        <div className="absolute inset-0 bg-void/70" />
+        <div className="absolute inset-0 bg-void/55" />
         <div className="section-wrapper pt-0 pb-0 relative z-10 w-full">
-          <FadeIn>
+          {/* <FadeIn>
             <span className="section-tag text-gold/70">{t("hero.tag")}</span>
-          </FadeIn>
+          </FadeIn> */}
           <FadeIn delay={0.1}>
             <h2 className="heading-xl text-cream mt-4">{t("hero.title")}</h2>
           </FadeIn>
@@ -63,7 +63,7 @@ export default async function AboutPage() {
         {/* Image */}
         <div className="relative w-full md:w-1/2 min-h-100 md:min-h-150">
           <Image
-            src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=80"
+            src="/images/home/08.jpg"
             alt={t("gap.eyebrow")}
             fill
             className="object-cover"
@@ -106,7 +106,7 @@ export default async function AboutPage() {
         {/* Image */}
         <div className="relative w-full md:w-1/2 min-h-100 md:min-h-150">
           <Image
-            src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1200&q=80"
+            src="/images/home/07.jpg"
             alt={t("opportunity.eyebrow")}
             fill
             className="object-cover"
@@ -149,7 +149,7 @@ export default async function AboutPage() {
         {/* Image */}
         <div className="relative w-full md:w-1/2 min-h-100 md:min-h-150">
           <Image
-            src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=1200&q=80"
+            src="/images/home/05.jpg"
             alt={t("solution.eyebrow")}
             fill
             className="object-cover"

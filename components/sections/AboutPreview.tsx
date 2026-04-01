@@ -16,7 +16,7 @@ export default function AboutPreview() {
     >
       {/* Background photo */}
       <Image
-        src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1600&q=80"
+        src="/images/home/bg.jpg"
         alt="Gastronomía con propósito"
         fill
         className="object-cover object-center"
@@ -25,7 +25,7 @@ export default function AboutPreview() {
 
       {/* Near-black warm overlay */}
       <div
-        className="absolute inset-0 bg-void/55"
+        className="absolute inset-0 bg-green-deep/45"
       />
 
       {/* Centered content */}
@@ -51,7 +51,7 @@ export default function AboutPreview() {
         </motion.h2>
 
         <motion.p
-          className="mb-10 font-body text-cream/65"
+          className="mb-10 font-body text-cream/55"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}

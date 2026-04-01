@@ -64,7 +64,7 @@ export default function ProjectsPreview() {
               <motion.article
                 key={project.id}
                 className={`relative overflow-hidden group cursor-pointer ${
-                  i === 0 ? "lg:col-span-2 lg:row-span-2 min-h-100 lg:min-h-0" : "min-h-65 lg:min-h-0"
+                  i === 0 ? "lg:col-span-2 lg:row-span-2 min-h-80 lg:min-h-0" : "min-h-80 lg:min-h-0"
                 }`}
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
@@ -85,7 +85,7 @@ export default function ProjectsPreview() {
                   className="absolute inset-0"
                   style={{
                     background:
-                      "linear-gradient(to top, rgba(26,15,8,0.92) 0%, rgba(26,15,8,0.45) 40%, transparent 70%)",
+                      "linear-gradient(to top, rgba(26,15,8,0.92) 0%, rgba(26,15,8,0.45) 30%, transparent 50%)",
                   }}
                 />
 

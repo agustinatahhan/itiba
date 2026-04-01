@@ -7,15 +7,15 @@ import { motion } from "framer-motion";
 
 const BLOCKS = [
   {
-    image: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80",
+    image: "/images/home/07.jpg",
     reverse: false, // image LEFT, text RIGHT
   },
   {
-    image: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80",
+    image: "/images/home/08.jpg",
     reverse: true,  // image RIGHT, text LEFT
   },
   {
-    image: "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=800&q=80",
+    image: "/images/home/05.jpg",
     reverse: false, // image LEFT, text RIGHT
   },
 ];
@@ -66,7 +66,7 @@ export default function StoryTeaser() {
                   {/* Image column — 35% on desktop, full width 200px on mobile */}
                   <div
                     className="relative w-full md:w-[35%] shrink-0 overflow-hidden"
-                    style={{ height: "200px" }}
+                    style={{ height: "300px" }}
                   >
                     <Image
                       src={block.image}
@@ -79,11 +79,8 @@ export default function StoryTeaser() {
 
                   {/* Text column — 65% on desktop */}
                   <div
-                    className="flex-1 flex flex-col justify-center"
-                    style={{
-                      backgroundColor: "#efe8d7",
-                      padding: "32px 48px",
-                    }}
+                    className="flex-1 flex flex-col justify-center py-8 px-0 md:px-12"
+                    style={{ backgroundColor: "#efe8d7" }}
                   >
                     <h3
                       className="font-heading mb-2.5 leading-snug text-red-accent"
