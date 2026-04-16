@@ -1,170 +1,125 @@
 {
   "nav": {
     "home": "Inicio",
-    "about": "Sobre Itibá",
+    "origin": "Origen",
+    "agency": "Agencia",
+    "vision": "Visión",
     "projects": "Proyectos",
+    "gallery": "Galería",
     "contact": "Contacto"
   },
   "hero": {
-    "title": "Gastronomía,\nCultura,\nEvolución",
-    "subtitle": "Transformamos talento culinario en experiencias que trascienden.",
+    "title": "Pausa. Recuerda. Evoluciona.",
+    "subtitle": "Donde la cultura se convierte en concepto.",
     "cta1": "Conocé nuestra historia",
     "cta2": "Ver proyectos",
     "scroll": "Desplazarse"
   },
-  "mission": {
-    "tag": "Nuestra misión",
-    "quote": "El puente entre el talento culinario y el éxito sostenible.",
-    "description": "Conectamos chefs visionarios con las herramientas y estrategias que necesitan para prosperar."
-  },
   "home": {
-    "manifesto": {
-      "eyebrow": "Por qué existimos",
-      "cta": "Conocé nuestra historia",
-      "cards": [
-        {
-          "title": "El Vacío Creativo",
-          "body": "La hospitalidad enfrenta una desconexión entre herencia cultural y ejecución comercial. Las marcas luchan por contar historias que resuenen de forma auténtica."
-        },
-        {
-          "title": "La Oportunidad",
-          "body": "Existe una demanda creciente de experiencias inmersivas. Unimos consumidores culturales y negocios de hospitalidad a través de un enfoque estratégico y holístico."
-        },
-        {
-          "title": "La Solución",
-          "body": "Conectamos gastronomía, cultura y sostenibilidad. Mediante arquitectura culinaria y narrativa creativa, diseñamos el futuro de las experiencias de gran escala."
-        }
-      ]
-    },
     "whoWeAre": {
-      "tag": "Quiénes somos",
-      "description": "Itibá es un estudio de innovación culinaria y agencia creativa. Diseñamos y ejecutamos experiencias gastronómicas, estrategias y momentos de marca que integran herencia, sostenibilidad y creatividad, generando resultados medibles y crecimiento sostenible."
-    },
-    "gap": {
-      "tag": "El vacío creativo",
-      "title": "La industria actual de la gastronomía y hospitalidad enfrenta una desconexión:",
-      "points": [
-        {
-          "number": "01",
-          "title": "Patrimonio fragmentado",
-          "description": "La herencia, la sostenibilidad y la autenticidad permanecen fragmentadas."
-        },
-        {
-          "number": "02",
-          "title": "Experiencias sin alma",
-          "description": "Falta de soluciones intergeneracionales que respondan a la demanda de un servicio holístico al huésped y experiencias culinarias culturalmente ricas."
-        },
-        {
-          "number": "03",
-          "title": "Narrativa débil",
-          "description": "Las marcas y la hospitalidad luchan por contar historias convincentes a través de la gastronomía."
-        }
-      ]
-    },
-    "opportunity": {
-      "tag": "La oportunidad",
-      "title": "Una demanda que pocos están satisfaciendo",
-      "stats": [
-        { "value": "$36.5B", "label": "Mercado de eventos culinarios" },
-        { "value": "68%", "label": "Prefieren experiencias auténticas" },
-        { "value": "$40B+", "label": "Proyección para 2030" }
-      ]
-    },
-    "solution": {
-      "tag": "La solución",
-      "title": "Itibá cierra la brecha",
+      "intro": "Itibá es una plataforma culinaria y cultural que nace desde el Caribe para repensar la gastronomía con identidad, método y visión de futuro. Parte del respeto profundo al producto local, a la cocina de origen y a la gente que la sostiene —productores, cocineros, comunidades— pero la trabaja con disciplina, estructura y estándares internacionales.",
+      "connector": "Itibá conecta tres cosas que casi nunca se trabajan juntas",
       "pillars": [
         {
-          "number": "01",
-          "title": "Arquitectura culinaria",
-          "description": "Conceptos con raíz cultural y visión artística."
+          "name": "Identidad",
+          "description": "Lo nuestro sin folclor, sin disfraz, sin perder verdad."
         },
         {
-          "number": "02",
-          "title": "Narrativa creativa",
-          "description": "Historias que hacen memorable a una marca."
+          "name": "Operación",
+          "description": "Procesos claros, costos reales, cocina que puede crecer y sostenerse."
         },
         {
-          "number": "03",
-          "title": "Visión estratégica",
-          "description": "Modelos de negocio rentables y sostenibles."
+          "name": "Impacto",
+          "description": "Formación, cadena de valor y uso consciente del territorio."
         }
       ]
     },
-    "aboutPreview": {
-      "tag": "Sobre Itibá",
-      "title": "Una agencia con propósito",
-      "description": "Conocé nuestra historia, visión y las mentes detrás de Itibá.",
-      "cta": "Conocé más sobre Itibá"
-    },
-    "impact": {
-      "tag": "Impacto y visión",
-      "title": "Gastronomía con propósito",
-      "intro": "Cada proyecto que diseñamos apunta a tres compromisos inamovibles:",
-      "points": [
-        "Elevar la hospitalidad y las ofertas de marca.",
-        "Integrar sostenibilidad y autenticidad cultural.",
-        "Entregar resultados medibles y responsabilidad social."
-      ]
+    "divider": {
+      "intro": "Gastronomía. Territorio. Evolución.  Creamos ideas con lenguaje, dirección y presencia."
     }
   },
-  "services": {
-    "tag": "Nuestro ADN y Servicios",
-    "title": "Modelo de cinco ejes:",
-    "viewAll": "Explorar servicios",
-    "items": [
-      {
-        "number": "01",
-        "title": "Alquimia Lab",
-        "description": "Innovación culinaria donde tradición y vanguardia se fusionan."
-      },
-      {
-        "number": "02",
-        "title": "Eventos & Activaciones",
-        "description": "Experiencias gastronómicas con identidad y propósito."
-      },
-      {
-        "number": "03",
-        "title": "Programas de Formación",
-        "description": "Training especializado para equipos de alto nivel."
-      },
-      {
-        "number": "04",
-        "title": "Consultoría Estratégica",
-        "description": "Concepto, narrativa, operaciones y finanzas integradas."
-      },
-      {
-        "number": "05",
-        "title": "Integración Deportiva",
-        "description": "Nutrición y gastronomía de alto rendimiento."
-      }
-    ]
+
+  "origin": {
+    "title": "Origen",
+    "heroAlt": "Origen Itibá",
+
+    "intro": "Itibá es una agencia creativa y gastronómica que desarrolla conceptos, experiencias y narrativas contemporáneas en la intersección entre dirección creativa, gastronomía, hospitalidad, territorio y evolución, desde el Caribe y en diálogo con Latinoamérica.",
+
+    "ctaExplore": "Explorar visión",
+    "ctaProjects": "Ver proyectos",
+
+    "support": "Gastronomía. Territorio. Evolución.",
+    "supportText": "Creamos ideas con lenguaje, dirección y presencia.",
+
+    "blockTitle": "Una agencia que crea desde el territorio y piensa para el presente.",
+    "blockText1": "Itibá trabaja en la intersección entre dirección creativa, narrativa, gastronomía y experiencia. Desarrolla conceptos que toman forma en activaciones, eventos, consultorías, colaboraciones y plataformas con identidad propia.",
+    "blockText2": "Su mirada parte del Caribe, pero no se limita a él. Opera desde una sensibilidad caribeña y latinoamericana, abierta al diálogo entre memoria, contemporaneidad, hospitalidad y marca.",
+
+    "projectTitle": "Proyecto destacado",
+    "projectName": "El Llamado de la Tierra",
+    "projectDesc": "Una experiencia donde territorio, gastronomía, dirección creativa y lenguaje visual tomaron forma en una narrativa común.",
+    "ctaProject": "Ver proyecto",
+
+    "clientsTitle": "Clientes y aliados",
+    "clientsText": "Itibá trabaja en diálogo con marcas, instituciones, espacios de hospitalidad y aliados culturales.",
+    "clients": "BRUGAL, MACARFI, ADG"
+  },
+  "vision": {
+     "title": "Visión",
+  "intro": "No partimos de formatos vacíos. Partimos de ideas con dirección.",
+
+  "visionText": "En Itibá, la visión reúne lo que hacemos, cómo lo pensamos y de qué manera toma forma. Es la zona donde concepto, hospitalidad, gastronomía y evolución se convierten en práctica.",
+
+  "creative": {
+    "title": "Dirección creativa y concepto",
+    "text": "Creamos conceptos fundacionales, narrativas y universos creativos para marcas, experiencias, plataformas y proyectos que necesitan una identidad clara.",
+    "applications": "naming, idea rectora, manifiesto, tono, lenguaje conceptual, dirección editorial y estructura creativa."
+  },
+
+  "events": {
+    "title": "Eventos · experiencias · pop-ups",
+    "text": "Diseñamos y producimos experiencias gastronómicas, culturales, institucionales y de marca con una lógica conceptual definida.",
+    "applications": "cenas especiales, activaciones de marca, lanzamientos, experiencias inmersivas, encuentros culturales y eventos de gran escala."
+  },
+
+  "consulting": {
+    "title": "Consultoría gastronómica y cultural",
+    "text": "Diseñamos y estructuramos propuestas para hoteles, restaurantes, marcas y espacios integrando concepto, gastronomía y hospitalidad en proyectos con identidad.",
+    "applications": "conceptualización gastronómica • narrativa territorial • experiencia • hospitalidad y estructuración de proyectos."
+  },
+
+  "education": {
+    "title": "Formación y laboratorios",
+    "text": "Creamos programas, talleres y laboratorios para equipos, instituciones y comunidades que buscan fortalecer capacidades en el sector gastronómico.",
+    "applications": "talleres de hospitalidad, creatividad gastronómica, sostenibilidad y formación especializada."
+  },
+
+  "alliances": {
+    "title": "Alianzas y experiencias integradas",
+    "text": "Articulamos marca, contenido, hospitalidad y experiencia en colaboraciones con sentido cultural.",
+    "applications": "alianzas estratégicas, integraciones de marca, contenido experiencial y formatos híbridos."
+  },
+
+  "thinking": "La creatividad en Itibá no es un recurso estético aislado. Es una forma de observar, conectar y construir sentido.",
+  "cta": "Ver proyectos"
   },
   "about": {
-    "meta": {
-      "title": "Sobre Nosotras — Itibá Gastronomic Agency",
-      "description": "Conocé la historia, visión y equipo detrás de Itibá Gastronomic Agency."
-    },
-    "hero": {
-      "tag": "Sobre Itibá",
-      "title": "Sobre Itibá"
-    },
-    "intro": "Itibá es un estudio de innovación culinaria y agencia creativa. Diseñamos y ejecutamos experiencias gastronómicas, estrategias y momentos de marca que integran herencia, sostenibilidad y creatividad, generando resultados medibles y crecimiento sostenible.",
-    "gap": {
-      "eyebrow": "El Vacío Creativo",
-      "title": "La industria enfrenta una desconexión",
-      "body": "La herencia, la sostenibilidad y la autenticidad permanecen fragmentadas. Las marcas y la hospitalidad luchan por contar historias convincentes a través de la gastronomía. Falta de soluciones intergeneracionales que respondan a la demanda de un servicio holístico."
-    },
-    "opportunity": {
-      "eyebrow": "La Oportunidad",
-      "title": "La Oportunidad",
-      "body": "Creciente interés del consumidor en la autenticidad culinaria y las prácticas sostenibles. Itibá crece desde un enfoque holístico para atender la demanda de consumidores culturales, negocios de hospitalidad y clientes corporativos."
-    },
-    "solution": {
-      "eyebrow": "La Solución",
-      "title": "La Solución",
-      "body": "Itibá conecta gastronomía, cultura y sostenibilidad. Combinamos Arquitectura Culinaria, Narrativa Creativa y Estrategia Financiera para transformar el talento gastronómico en legado duradero."
-    },
+    "intro": "Itibá desarrolla conceptos, experiencias y estrategias a partir del territorio, la memoria y la transformación contemporánea. Trabaja en la intersección entre narrativa, hospitalidad y gastronomía para construir proyectos con identidad, profundidad y capacidad de conexión real.",
+    "title": "Agencia",
+    "heroText": "Una agencia donde gastronomía, dirección creativa y evolución trabajan juntas.",
+    "heroDesc1": "Itibá es una agencia creativa y gastronómica que desarrolla conceptos, experiencias y estrategias a partir del territorio, la memoria y la transformación contemporánea.",
+    "heroDesc2": "Trabaja en la intersección entre narrativa, hospitalidad y gastronomía para construir proyectos con identidad, profundidad y capacidad de conexión real.",
+    "ctaVision": "Ver visión",
+
+    "visionTitle": "Nuestra mirada",
+    "visionText": "Pensamos desde el Caribe y en diálogo con Latinoamérica. Eso significa trabajar con raíces, pero sin nostalgia inmóvil; con identidad, pero sin folclor vacío; con sensibilidad cultural, pero también con visión contemporánea.",
+
+    "processTitle": "Cómo trabajamos",
+    "processText": "Cada proyecto comienza con una pregunta de fondo: qué necesita tomar forma, qué lenguaje puede sostenerlo y qué experiencia puede volverlo memorable. A partir de ahí articulamos concepto, narrativa, dirección creativa, experiencia y ejecución.",
+
+    "driveTitle": "Lo que nos mueve",
+    "driveText": "Nos mueve la posibilidad de transformar memoria en lenguaje, territorio en experiencia e intuición en estructura. Nos interesa crear proyectos con belleza, sí, pero también con pensamiento, intención y capacidad de dejar huella.",
+    "ctaProjects": "Explorar proyectos",
     "team": {
       "tag": "El equipo",
       "title": "Las mentes detrás de Itibá",
@@ -182,27 +137,22 @@
           "role": "Arquitecta de narrativas",
           "description": "Visión Creativa de Marca, Storytelling y Desarrollo de Conceptos Fundacionales.",
           "quote": "Cada marca tiene una historia que merece ser contada con precisión."
-        },
-        {
-          "name": "Oneida Franco",
-          "title": "Chief Operating Officer (COO)",
-          "role": "Estratega financiera",
-          "description": "Operaciones, Estrategia de Crecimiento y Sostenibilidad Financiera.",
-          "quote": "La sostenibilidad es financiera, operativa y humana."
         }
       ]
     }
   },
+  
   "projects": {
     "meta": {
       "title": "Proyectos — Itibá Gastronomic Agency",
       "description": "Explorá nuestros proyectos y colaboraciones en la industria gastronómica."
     },
     "tag": "Proyectos",
-    "title": "Nuestro trabajo",
+    "title": "Proyectos",
     "subtitle": "Cada proyecto es una historia de transformación.",
     "viewMore": "Ver más",
-    "viewAll": "Ver todos los proyectos"
+    "viewAll": "Ver Más",
+    "backToProjects": "Volver a proyectos"
   },
   "contact": {
     "meta": {
@@ -235,10 +185,14 @@
       }
     }
   },
+  "gallery": {
+    "title": "Galería",
+    "viewAll": "Ver Más"
+  },
   "footer": {
     "tagline": "Gastronomía, Cultura, Evolución",
-    "description": "Agencia de innovación culinaria dedicada a transformar el talento gastronómico en legado.",
-    "copyright": "© 2025 Itibá Gastronomic Agency. Todos los derechos reservados.",
+    "description": "Una agencia donde gastronomía, dirección creativa y evolución trabajan juntas.",
+    "copyright": "© 2026 Itibá Agencia Gastronómica. Todos los derechos reservados.",
     "navTitle": "Navegación",
     "servicesTitle": "Servicios",
     "services": [

@@ -1,12 +1,11 @@
 import { getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
-import Hero from "@/components/sections/Hero";
-import StoryTeaser from "@/components/sections/StoryTeaser";
-import WhoWeAre from "@/components/sections/WhoWeAre";
-import Services from "@/components/sections/Services";
-import ProjectsPreview from "@/components/sections/ProjectsPreview";
-import ImpactVision from "@/components/sections/ImpactVision";
-import AboutPreview from "@/components/sections/AboutPreview";
+import Hero from "@/components/sections/home/Hero";
+import WhoWeAre from "@/components/sections/home/WhoWeAre";
+import ProjectsPreview from "@/components/sections/home/ProjectsPreview";
+import Team from "@/components/sections/home/Team";
+import Divider from "@/components/sections/home/Divider";
+import Gallery from "@/components/sections/home/Gallery";
 
 interface HomePageProps {
   params: Promise<{ locale: string }>;
@@ -28,11 +27,11 @@ export default async function HomePage() {
     <>
       <Hero />
       <WhoWeAre />
-      <StoryTeaser />
-      <Services />
+      <Team />
       <ProjectsPreview />
-      {/* <ImpactVision /> */}
-      <AboutPreview />
+      <Divider />
+      <Gallery />
+    
     </>
   );
 }

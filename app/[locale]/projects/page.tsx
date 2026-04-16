@@ -2,7 +2,7 @@ import { getTranslations } from "next-intl/server";
 import { getLocale } from "next-intl/server";
 import type { Metadata } from "next";
 import FadeIn from "@/components/animations/FadeIn";
-import ProjectsGrid from "@/components/sections/Projects";
+import ProjectsGrid from "@/components/sections/home/Projects";
 import Image from "next/image";
 
 interface ProjectsPageProps {
@@ -26,12 +26,14 @@ export default async function ProjectsPage() {
 
   return (
     <>
-      <section className="relative flex items-end pt-32 pb-14 md:pt-52 md:pb-28 overflow-hidden min-h-[45vh] md:min-h-[65vh]">
+      <section className="imgbg">
         <Image
           src="/images/home/07.jpg"
           alt="Proyectos Itibá"
           fill
           className="object-cover object-center"
+           sizes="(max-width: 768px) 100vw, 100vw"
+          quality={70}
         />
         <div className="absolute inset-0 bg-void/55" />
         <div className="section-wrapper pt-0 pb-0 relative z-10 w-full">
@@ -39,7 +41,7 @@ export default async function ProjectsPage() {
             <span className="section-tag text-gold/70">{t("tag")}</span>
           </FadeIn> */}
           <FadeIn delay={0.1}>
-            <h2 className="heading-xl text-cream mt-4">{t("title")}</h2>
+            <h2 className="h2-heading">{t("title")}</h2>
           </FadeIn>
           {/* <FadeIn delay={0.2}>
             <p
@@ -53,7 +55,7 @@ export default async function ProjectsPage() {
       </section>
 
       {/* Projects Grid */}
-      <section className="bg-white py-14">
+      <section className="bg-cream py-14">
         <div className="section-wrapper">
           <ProjectsGrid locale={locale} viewMoreLabel={t("viewMore")} />
         </div>

@@ -42,7 +42,7 @@ export default function LanguageToggle({ scrolled = false }: LanguageToggleProps
                 ? "bg-body text-cream"
                 : "bg-transparent text-body/50"
               : locale === lang
-              ? "bg-cream text-brown"
+              ? "bg-cream text-black"
               : "bg-transparent text-cream/55"
           }`}
         >

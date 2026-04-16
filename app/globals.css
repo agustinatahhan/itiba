@@ -1,24 +1,21 @@
 @import "tailwindcss";
 
-/* ─── Brand Identity System ────────────────────────────────── */
 @theme {
-  /* Primary brand palette */
-  --color-cream: #efe8d7;         /* warm cream — light backgrounds, text on dark */
-  --color-brown: #623d2a;         /* warm brown — nav, section panels, buttons */
-  --color-red-accent: #951b0e;    /* deep red — section title text ONLY, thin lines */
-  --color-olive-dark: #66744e;    /* dark olive — dark section backgrounds */
-  --color-olive: #798463;         /* muted olive — eyebrows, secondary text, borders */
-  --color-body: #3d2010;          /* dark warm brown — body text on cream */
-  --color-void: #1a0f08;          /* near-black — footer, deep overlays */
-  --color-void-mid: #2a1508;      /* decorative dark — wordmarks */
+  --color-cream: #fff;
+  --color-brown: #633f28;
+  --color-red-accent: #8d1e13;
+  --color-olive-dark: #66744e;
+  --color-olive: #1e2d1a;
+  --color-body: #3d2010;
+  --color-void: #1a0f08;
+  --color-void-mid: #2a1508;
 
-  /* Legacy aliases so Hero (do-not-touch) keeps working */
-  --color-green-deep: #1a0f08;    /* → void */
-  --color-ivory: #efe8d7;         /* → cream */
-  --color-brown-warm: #623d2a;    /* → brown */
-  --color-gold: #798463;          /* → olive (repurposed for subtle accents) */
+  --color-green-deep: #1a0f08;
+  --color-ivory: #efe8d7;
+  --color-brown-warm: #623d2a;
+  --color-gold: #798463;
 
-  --color-brown-mid: #7a5a42;        /* mid brown — footer links, decorative text */
+  --color-brown-mid: #7a5a42;
 
   --font-heading: var(--font-cormorant), "Cormorant Garamond", Georgia, serif;
   --font-body: "Calibri", "Calibri Body", system-ui, sans-serif;
@@ -26,55 +23,64 @@
 
 /* ─── Base ──────────────────────────────────────────────────── */
 @layer base {
-  html { scroll-behavior: smooth; }
-
-  body {
-    background-color: #ffffff;
-    color: #3d2010;
-    font-family: var(--font-body);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  html {
+    scroll-behavior: smooth;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  body {
+    @apply bg-cream text-black font-sans antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: var(--font-heading);
   }
 
+  h1 {
+    @apply font-heading text-5xl md:text-7xl;
+  }
   h2 {
-    font-size: 2rem;
-    font-weight: 400;
-    line-height: 1.2;
+    @apply font-heading text-4xl md:text-5xl;
   }
-
   h3 {
-    font-size: 1.4rem;
-    font-weight: 400;
-    line-height: 1.3;
+    @apply font-heading text-3xl md:text-4xl tracking-wider;
   }
-
   h4 {
-    font-size: 1.1rem;
-    font-weight: 500;
-    font-family: var(--font-body);
-    line-height: 1.4;
+    @apply font-heading text-xl md:text-3xl tracking-wider leading-[1.8];
   }
-
   p {
-    font-size: 1.05rem;
-    font-weight: 400;
-    line-height: 1.8;
-    font-family: var(--font-body);
+    @apply text-sm md:text-lg lg:text-xl leading-relaxed font-body text-justify ;
+  }
+  span {
+    @apply text-xs md:text-sm leading-relaxed font-body;
   }
 
   ::selection {
-    background-color: #623d2a;
-    color: #efe8d7;
+    @apply bg-[#623d2a] text-[#efe8d7];
+  }
+
+  .pady {
+    @apply py-20 md:py-40;
+  }
+
+  .padx {
+    @apply mx-auto px-7 md:px-12;
+  }
+
+  .imgbg{
+    @apply relative flex items-end pt-32 pb-14 md:pt-52 md:pb-28 overflow-hidden h-[45vh] md:h-[65vh]
+  }
+
+  .h2-heading {
+     @apply font-heading text-5xl md:text-7xl text-cream;
   }
 }
-
 /* ─── Components ────────────────────────────────────────────── */
 @layer components {
-
   /* Layout */
   .section-wrapper {
     max-width: 80rem;
@@ -117,39 +123,6 @@
   }
 
   /* Display headings */
-  .heading-xl {
-    font-family: var(--font-heading);
-    font-size: clamp(2.5rem, 6vw, 5rem);
-    font-weight: 300;
-    line-height: 1.1;
-    letter-spacing: -0.02em;
-    color: #3d2010;
-  }
-
-  .heading-lg {
-    font-family: var(--font-heading);
-    font-size: clamp(1.75rem, 4vw, 3rem);
-    font-weight: 300;
-    line-height: 1.2;
-    letter-spacing: -0.01em;
-    color: #3d2010;
-  }
-
-  .heading-md {
-    font-family: var(--font-heading);
-    font-size: clamp(1.25rem, 2.5vw, 1.875rem);
-    font-weight: 400;
-    line-height: 1.3;
-    color: #3d2010;
-  }
-
-  .body-text {
-    font-family: var(--font-body);
-    font-size: 1.05rem;
-    line-height: 1.8;
-    color: #3d2010;
-    opacity: 0.75;
-  }
 
   /* Buttons */
   .btn-primary {
@@ -166,7 +139,9 @@
     text-transform: uppercase;
     border: 1px solid #623d2a;
     cursor: pointer;
-    transition: background-color 0.3s ease, border-color 0.3s ease;
+    transition:
+      background-color 0.3s ease,
+      border-color 0.3s ease;
     text-decoration: none;
   }
   .btn-primary:hover {
@@ -180,22 +155,33 @@
     gap: 0.5rem;
     padding: 0.875rem 2rem;
     background-color: transparent;
-    color: #623d2a;
+    color: #000;
     font-family: var(--font-body);
     font-size: 0.8rem;
     font-weight: 500;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    border: 1px solid #623d2a;
+    border: 1px solid #000;
     cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition:
+      background-color 0.3s ease,
+      color 0.3s ease;
     text-decoration: none;
   }
+
   .btn-outline:hover {
     background-color: #623d2a;
     color: #efe8d7;
   }
 
+  @media (max-width: 480px) {
+    .btn-outline {
+      padding: 0.5rem 1.2rem;
+      font-size: 0.7rem;
+      gap: 0.3rem;
+      letter-spacing: 0.08em;
+    }
+  }
   /* Used by Hero & AboutPreview — cream border + cream text on dark overlay */
   .btn-outline-light {
     display: inline-flex;
@@ -211,7 +197,10 @@
     text-transform: uppercase;
     border: 1px solid rgba(239, 232, 215, 0.45);
     cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    transition:
+      background-color 0.3s ease,
+      color 0.3s ease,
+      border-color 0.3s ease;
     text-decoration: none;
   }
   .btn-outline-light:hover {
@@ -237,5 +226,23 @@
     height: 1px;
     background-color: #951b0e;
     margin: 1.5rem 0;
+  }
+
+  /* Gradient overlays — usados en tarjetas con imagen de fondo */
+  .overlay-gradient-bottom {
+    background: linear-gradient(
+      to top,
+      rgba(26, 15, 8, 0.92) 0%,
+      rgba(26, 15, 8, 0.45) 30%,
+      transparent 55%
+    );
+  }
+
+  .overlay-gradient-bottom-subtle {
+    background: linear-gradient(
+      to top,
+      rgba(26, 15, 8, 0.35) 0%,
+      transparent 60%
+    );
   }
 }

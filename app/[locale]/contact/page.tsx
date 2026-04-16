@@ -2,8 +2,8 @@ import { getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
 import Image from "next/image";
 import FadeIn from "@/components/animations/FadeIn";
-import ContactForm from "@/components/sections/ContactForm";
-import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import ContactForm from "@/components/sections/contact/ContactForm";
 
 interface ContactPageProps {
   params: Promise<{ locale: string }>;
@@ -26,88 +26,70 @@ export default async function ContactPage() {
   return (
     <>
       {/* Page Header */}
-      <section className="relative flex items-end pt-32 pb-14 md:pt-52 md:pb-28 overflow-hidden min-h-[45vh] md:min-h-[65vh]">
+      <section className="imgbg">
         <Image
           src="/images/home/05.jpg"
           alt="Contacto Itibá"
           fill
           className="object-cover object-center"
           priority
-          unoptimized
+          sizes="(max-width: 768px) 100vw, 100vw"
+          quality={70}
         />
         <div className="absolute inset-0 bg-void/55" />
         <div className="section-wrapper pt-0 pb-0 relative z-10 w-full">
-          {/* <FadeIn>
-            <span className="section-tag text-gold/70">{t("tag")}</span>
-          </FadeIn> */}
           <FadeIn delay={0.1}>
-            <h2 className="heading-xl text-cream mt-4">{t("title")}</h2>
-          </FadeIn>
-          <FadeIn delay={0.2}>
-            <p
-              className="text-cream/60 mt-6 max-w-xl text-base leading-relaxed"
-              style={{ fontFamily: "var(--font-body)" }}
-            >
-              {t("subtitle")}
-            </p>
+            <h2 className=" h2-heading">{t("tag")}</h2>
           </FadeIn>
         </div>
       </section>
 
       {/* Contact Content */}
-      <section className="bg-white">
+      <section className="bg-cream">
         <div className="section-wrapper">
           <div className="grid md:grid-cols-2 gap-16 lg:gap-24">
             {/* Left: Info */}
             <FadeIn>
               <div>
                 <div className="divider-gold" />
-                <h2 className="heading-md mb-8">{t("title")}</h2>
-                <p className="body-text mb-12">{t("subtitle")}</p>
+                <h3 className="mb-8">{t("title")}</h3>
+                <p className="mb-12 font-light">{t("subtitle")}</p>
 
                 <div className="space-y-6">
                   <div>
-                    <p
-                      className="section-tag mb-2"
-                      style={{ color: "#6B7A5C" }}
-                    >
-                      Email
-                    </p>
-                    <a
-                      href={`mailto:${t("info.email")}`}
-                      className="text-green-deep hover:text-gold transition-colors"
-                      style={{ fontFamily: "var(--font-body)" }}
-                    >
-                      {t("info.email")}
-                    </a>
+                    <p className="section-tag mb-4 text-black/80">Email</p>
+                    <div className="flex gap-4">
+                      <a href={`mailto:${t("info.email")}`}>
+                        <p className="text-[#4a2d1e] font-light hover:text-[#4a2d1e] transition-colors">
+                          {t("info.email")}
+                        </p>
+                      </a>
+                    </div>
                   </div>
 
                   <div>
-                    <p
-                      className="section-tag mb-4"
-                      style={{ color: "#6B7A5C" }}
-                    >
+                    <p className="section-tag mb-4 text-black/80">
                       {t("info.follow")}
                     </p>
                     <div className="flex gap-4">
                       <a
-                        href="https://www.instagram.com"
+                        href="https://www.instagram.com/itibaagencia/"
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="Instagram"
-                        className="w-10 h-10 border border-gold/40 flex items-center justify-center text-green-deep hover:bg-green-deep hover:text-cream hover:border-green-deep transition-all"
+                        className="w-10 h-10 border border-[#4a2d1e]/40 flex items-center justify-center text-[#4a2d1e] hover:bg-brown hover:text-cream hover:border-brown transition-all"
                       >
                         <FaInstagram size={16} />
                       </a>
-                      <a
+                      {/* <a
                         href="https://www.linkedin.com"
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="LinkedIn"
-                        className="w-10 h-10 border border-gold/40 flex items-center justify-center text-green-deep hover:bg-green-deep hover:text-cream hover:border-green-deep transition-all"
+                        className="w-10 h-10 border border-gold/40 flex items-center justify-center text-black hover:bg-brown hover:text-cream hover:border-brown transition-all"
                       >
                         <FaLinkedinIn size={16} />
-                      </a>
+                      </a> */}
                     </div>
                   </div>
                 </div>
