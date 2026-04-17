@@ -28,7 +28,7 @@ export default function OriginBody() {
         {/* Imagen */}
         <div className="relative min-h-80 md:min-h-105 lg:min-h-full overflow-hidden group">
           <Image
-            src="/images/origin/manos.jpeg"
+            src="/images/origin/manos.webp"
             alt="Itibá"
             fill
             className="object-cover object-center"
@@ -40,7 +40,7 @@ export default function OriginBody() {
         <div className="flex items-center bg-olive/80">
           <div className="py-16 md:py-30 max-w-2xl padx">
             <motion.h4
-              className=" text-cream text-justify"
+              className=" text-cream"
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -115,7 +115,7 @@ export default function OriginBody() {
             transition={{ duration: 0.6 }}
           >
             <Image
-              src="/images/projects/06.jpg"
+              src="/images/projects/06.webp"
               alt={t("projectName")}
               fill
               className="object-cover "
@@ -162,8 +162,8 @@ export default function OriginBody() {
           >
             {[
               { name: "brugal", src: "/images/origin/brugal.webp" },
-              { name: "macarfi", src: "/images/origin/macarfii.png" },
-              { name: "adg", src: "/images/origin/adgg.png" },
+              { name: "macarfi", src: "/images/origin/macarfii.webp" },
+              { name: "adg", src: "/images/origin/adgg.webp" },
             ].map((client) => (
               <motion.div
                 key={client.name}

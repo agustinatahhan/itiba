@@ -61,7 +61,7 @@ export default function AgencyBody() {
             {/* Imagen */}
             <div className="relative h-60 md:h-80 overflow-hidden">
               <Image
-                src="/images/home/cacao.jpeg"
+                src="/images/home/cacao.webp"
                 alt=""
                 fill
                 className="object-cover"
@@ -91,7 +91,7 @@ export default function AgencyBody() {
             {/* Imagen */}
             <div className="relative h-60 md:h-80 overflow-hidden md:order-2 order-1">
               <Image
-                src="/images/home/07.jpg"
+                src="/images/home/07.webp"
                 alt=""
                 fill
                 className="object-cover"

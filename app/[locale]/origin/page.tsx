@@ -2,6 +2,7 @@ import FadeIn from "@/components/animations/FadeIn";
 import OriginBody from "@/components/sections/origin/OriginBody";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
+import { BLUR } from "@/lib/blur-placeholders";
 
 export default async function Origin() {
   const t = await getTranslations("origin");
@@ -10,11 +11,13 @@ export default async function Origin() {
     <>
       <section className="imgbg">
         <Image
-          src="/images/home/05.jpg"
+          src="/images/home/05.webp"
           alt="Contacto Itibá"
           fill
           className="object-cover object-center"
           priority
+          placeholder="blur"
+          blurDataURL={BLUR["home/05"]}
           sizes="(max-width: 768px) 100vw, 100vw"
           quality={70}
         />

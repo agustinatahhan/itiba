@@ -6,9 +6,9 @@ import { useTranslations, useLocale } from "next-intl";
 import { motion } from "framer-motion";
 
 const BLOCKS = [
-  { image: "/images/home/07.jpg", reverse: false },
-  { image: "/images/home/08.jpg", reverse: true },
-  { image: "/images/home/05.jpg", reverse: false },
+  { image: "/images/home/07.webp", reverse: false },
+  { image: "/images/home/08.webp", reverse: true },
+  { image: "/images/home/05.webp", reverse: false },
 ];
 
 export default function StoryTeaser() {

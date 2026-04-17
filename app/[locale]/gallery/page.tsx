@@ -2,6 +2,7 @@ import FadeIn from "@/components/animations/FadeIn";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import GalleryGrid from "@/components/sections/gallery/GalleryGrid";
+import { BLUR } from "@/lib/blur-placeholders";
 
 export default async function Gallery() {
   const t = await getTranslations("gallery");
@@ -17,14 +18,14 @@ export default async function Gallery() {
     "/images/gallery/01.webp",
     "/images/gallery/015.webp",
 
-    "/images/gallery/019.jpg",
-    "/images/gallery/020.jpg",
-    "/images/gallery/021.jpg",
+    "/images/gallery/019.webp",
+    "/images/gallery/020.webp",
+    "/images/gallery/021.webp",
     "/images/gallery/018.webp",
 
     "/images/gallery/09.webp",
     "/images/gallery/010.webp",
-    "/images/gallery/011.jpg",
+    "/images/gallery/011.webp",
     "/images/gallery/012.webp",
   ];
 
@@ -32,11 +33,13 @@ export default async function Gallery() {
     <>
       <section className="imgbg">
         <Image
-          src="/images/home/05.jpg"
+          src="/images/home/05.webp"
           alt="Contacto Itibá"
           fill
           className="object-cover object-center"
           priority
+          placeholder="blur"
+          blurDataURL={BLUR["home/05"]}
           sizes="(max-width: 768px) 100vw, 100vw"
           quality={70}
         />

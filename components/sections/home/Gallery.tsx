@@ -9,9 +9,9 @@ export default function Gallery() {
   const t = useTranslations("gallery");
   const images = [
     "/images/gallery/018.webp",
-    "/images/gallery/019.jpg",
-    "/images/gallery/020.jpg",
-    "/images/gallery/021.jpg",
+    "/images/gallery/019.webp",
+    "/images/gallery/020.webp",
+    "/images/gallery/021.webp",
   ];
   return (
     <section className="w-full pady bg-white">

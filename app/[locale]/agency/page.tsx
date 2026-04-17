@@ -2,6 +2,7 @@ import { getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
 import Image from "next/image";
 import FadeIn from "@/components/animations/FadeIn";
+import { BLUR } from "@/lib/blur-placeholders";
 // import Team from "@/components/sections/home/Team";
 import AgencyBody from "@/components/sections/agency/AgencyBody";
 
@@ -27,11 +28,13 @@ export default async function AboutPage() {
     <>
       <section className="imgbg">
         <Image
-          src="/images/home/05.jpg"
+          src="/images/home/05.webp"
           alt="Itibá Gastronomic Agency"
           fill
           className="object-cover object-center"
           priority
+          placeholder="blur"
+          blurDataURL={BLUR["home/05"]}
           sizes="(max-width: 768px) 100vw, 100vw"
           quality={70}
         />

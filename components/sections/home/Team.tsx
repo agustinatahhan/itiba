@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 
-const memberImages = ["/images/about/dyanny.png", "/images/about/noee.png"];
+const memberImages = ["/images/about/dyanny.webp", "/images/about/noee.webp"];
 
 export default function TeamCompact() {
   const t = useTranslations("about.team");

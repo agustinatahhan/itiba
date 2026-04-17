@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import FadeIn from "@/components/animations/FadeIn";
 import ProjectsGrid from "@/components/sections/home/Projects";
 import Image from "next/image";
+import { BLUR } from "@/lib/blur-placeholders";
 
 interface ProjectsPageProps {
   params: Promise<{ locale: string }>;
@@ -28,11 +29,14 @@ export default async function ProjectsPage() {
     <>
       <section className="imgbg">
         <Image
-          src="/images/home/07.jpg"
+          src="/images/home/07.webp"
           alt="Proyectos Itibá"
           fill
           className="object-cover object-center"
-           sizes="(max-width: 768px) 100vw, 100vw"
+          priority
+          placeholder="blur"
+          blurDataURL={BLUR["home/07"]}
+          sizes="(max-width: 768px) 100vw, 100vw"
           quality={70}
         />
         <div className="absolute inset-0 bg-void/55" />

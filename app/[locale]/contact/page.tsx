@@ -2,6 +2,7 @@ import { getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
 import Image from "next/image";
 import FadeIn from "@/components/animations/FadeIn";
+import { BLUR } from "@/lib/blur-placeholders";
 import { FaInstagram } from "react-icons/fa";
 import ContactForm from "@/components/sections/contact/ContactForm";
 
@@ -28,11 +29,13 @@ export default async function ContactPage() {
       {/* Page Header */}
       <section className="imgbg">
         <Image
-          src="/images/home/05.jpg"
+          src="/images/home/05.webp"
           alt="Contacto Itibá"
           fill
           className="object-cover object-center"
           priority
+          placeholder="blur"
+          blurDataURL={BLUR["home/05"]}
           sizes="(max-width: 768px) 100vw, 100vw"
           quality={70}
         />
