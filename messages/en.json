@@ -9,115 +9,99 @@
     "contact": "Contact"
   },
   "hero": {
-    "title": "Gastronomy,\nCulture,\nEvolution",
-    "subtitle": "We transform culinary talent into experiences that transcend.",
+    "title": "Pause. Remember. Evolve.",
+    "subtitle": "Where culture becomes concept.",
     "cta1": "Discover our story",
     "cta2": "View projects",
     "scroll": "Scroll"
   },
   "home": {
     "whoWeAre": {
-      "intro": "Itibá is a culinary and cultural platform born from the Caribbean to rethink gastronomy with identity, method, and a vision for the future. It is rooted in deep respect for local produce, origin cooking, and the people who sustain it —producers, cooks, communities— while working with discipline, structure, and international standards.",
-      "connector": "Itibá connects three things that are almost never worked on together",
+      "intro": "Itibá is a culinary and cultural platform born in the Caribbean to rethink gastronomy through identity, structure, and a forward-looking vision. It starts from a deep respect for local products, origin cuisine, and the people who sustain it — producers, cooks, communities — while shaping it with discipline, structure, and international standards.",
+      "connector": "Itibá connects three elements that are rarely developed together",
       "pillars": [
         {
           "name": "Identity",
-          "description": "Our own, without folklore, without disguise, without losing truth."
+          "description": "What is ours without folklore, without disguise, without losing its truth."
         },
         {
-          "name": "Operation",
-          "description": "Clear processes, real costs, a kitchen that can grow and sustain itself."
+          "name": "Operations",
+          "description": "Clear processes, real costs, and a cuisine that can grow and sustain itself."
         },
         {
           "name": "Impact",
-          "description": "Training, value chain, and conscious use of the territory."
+          "description": "Education, value chain, and conscious use of territory."
         }
       ]
     },
     "divider": {
-      "intro": "Gastronomía. Territorio. Evolución.  Creamos ideas con lenguaje, dirección y presencia."
+      "intro": "Gastronomy. Territory. Evolution. We create ideas with language, direction, and presence."
     }
   },
   "origin": {
     "title": "Origin",
     "heroAlt": "Itibá Origin",
-
-    "intro": "Itibá is a creative and gastronomic agency that develops contemporary concepts, experiences, and narratives at the intersection of creative direction, gastronomy, hospitality, territory, and evolution, rooted in the Caribbean and in dialogue with Latin America.",
-
+    "intro": "Itibá is a creative and gastronomic agency that develops contemporary concepts, experiences, and narratives at the intersection of creative direction, gastronomy, hospitality, territory, and evolution, from the Caribbean and in dialogue with Latin America.",
     "ctaExplore": "Explore vision",
     "ctaProjects": "View projects",
-
     "support": "Gastronomy. Territory. Evolution.",
     "supportText": "We create ideas with language, direction, and presence.",
-
-    "blockTitle": "An agency that creates from territory and thinks for the present.",
-    "blockText1": "Itibá operates at the intersection of creative direction, narrative, gastronomy, and experience. It develops concepts that take shape through activations, events, consulting, collaborations, and platforms with a distinct identity.",
-    "blockText2": "Its perspective begins in the Caribbean but is not limited to it. It works from a Caribbean and Latin American sensibility, open to dialogue between memory, contemporaneity, hospitality, and brand.",
-
+    "blockTitle": "An agency that creates from the territory and thinks for the present.",
+    "blockText1": "Itibá operates at the intersection of creative direction, narrative, gastronomy, and experience. It develops concepts that take shape through activations, events, consulting, collaborations, and platforms with their own identity.",
+    "blockText2": "Its perspective originates in the Caribbean but is not limited to it. It operates from a Caribbean and Latin American sensibility, open to dialogue between memory, contemporaneity, hospitality, and brand.",
     "projectTitle": "Featured project",
-    "projectName": "The Call of the Land",
+    "projectName": "The Call of the Earth",
     "projectDesc": "An experience where territory, gastronomy, creative direction, and visual language came together in a shared narrative.",
     "ctaProject": "View project",
-
     "clientsTitle": "Clients & partners",
-    "clientsText": "Itibá collaborates with brands, institutions, hospitality spaces, and cultural allies.",
+    "clientsText": "Itibá collaborates with brands, institutions, hospitality spaces, and cultural partners.",
     "clients": "BRUGAL, MACARFI, ADG"
   },
   "vision": {
     "title": "Vision",
     "intro": "We don’t start from empty formats. We start from ideas with direction.",
-
-    "visionText": "At Itibá, vision brings together what we do, how we think, and how it takes form. It is where concept, hospitality, gastronomy, and evolution become practice.",
-
+    "visionText": "At Itibá, vision brings together what we do, how we think about it, and how it takes shape. It is the space where concept, hospitality, gastronomy, and evolution become practice.",
     "creative": {
       "title": "Creative direction & concept",
-      "text": "We develop foundational concepts, narratives, and creative universes for brands and projects that require a clear identity.",
+      "text": "We create foundational concepts, narratives, and creative universes for brands, experiences, platforms, and projects that require a clear identity.",
       "applications": "naming, core idea, manifesto, tone, conceptual language, editorial direction, and creative structure."
     },
-
     "events": {
       "title": "Events · experiences · pop-ups",
-      "text": "We design and produce gastronomic, cultural, and brand experiences with a defined conceptual logic.",
-      "applications": "special dinners, brand activations, launches, immersive experiences, and large-scale events."
+      "text": "We design and produce gastronomic, cultural, institutional, and brand experiences with a defined conceptual logic.",
+      "applications": "special dinners, brand activations, launches, immersive experiences, cultural gatherings, and large-scale events."
     },
-
     "consulting": {
       "title": "Gastronomic & cultural consulting",
-      "text": "We design and structure proposals integrating concept, gastronomy, and hospitality into projects with identity and coherence.",
-      "applications": "gastronomic concept • territorial narrative • experience design • project structuring."
+      "text": "We design and structure proposals for hotels, restaurants, brands, and spaces by integrating concept, gastronomy, and hospitality into identity-driven projects.",
+      "applications": "gastronomic conceptualization • territorial narrative • experience • hospitality and project structuring."
     },
-
     "education": {
       "title": "Education & labs",
-      "text": "We create programs and workshops to strengthen capabilities in the gastronomic sector.",
-      "applications": "hospitality training, culinary creativity, sustainability, and specialized education."
+      "text": "We create programs, workshops, and labs for teams, institutions, and communities seeking to strengthen capabilities in the gastronomic sector.",
+      "applications": "hospitality workshops, gastronomic creativity, sustainability, and specialized training."
     },
-
     "alliances": {
       "title": "Alliances & integrated experiences",
-      "text": "We connect brands, content, and hospitality into meaningful collaborations.",
+      "text": "We articulate brand, content, hospitality, and experience in collaborations with cultural meaning.",
       "applications": "strategic alliances, brand integrations, experiential content, and hybrid formats."
     },
-
     "thinking": "Creativity at Itibá is not an isolated aesthetic resource. It is a way of observing, connecting, and building meaning.",
     "cta": "View projects"
   },
   "about": {
-    "intro": "Itibá develops concepts, experiences, and strategies rooted in territory, memory, and contemporary transformation. It operates at the intersection of narrative, hospitality, and gastronomy to build projects with identity, depth, and a genuine capacity for connection.",
+    "intro": "Itibá develops concepts, experiences, and strategies rooted in territory, memory, and contemporary transformation. It operates at the intersection of narrative, hospitality, and gastronomy to build projects with identity, depth, and real connection.",
     "title": "Agency",
     "heroText": "An agency where gastronomy, creative direction, and evolution work together.",
     "heroDesc1": "Itibá is a creative and gastronomic agency that develops concepts, experiences, and strategies rooted in territory, memory, and contemporary transformation.",
-    "heroDesc2": "It operates at the intersection of narrative, hospitality, and gastronomy to build projects with identity, depth, and a genuine capacity for connection.",
+    "heroDesc2": "It operates at the intersection of narrative, hospitality, and gastronomy to build projects with identity, depth, and real connection.",
     "ctaVision": "View vision",
-
     "visionTitle": "Our perspective",
-    "visionText": "We think from the Caribbean, in dialogue with Latin America. This means working with roots, but without static nostalgia; with identity, but without empty folklore; with cultural sensitivity, but also with a contemporary vision.",
-
+    "visionText": "We think from the Caribbean and in dialogue with Latin America. This means working with roots, but without static nostalgia; with identity, but without empty folklore; with cultural sensitivity, but also with a contemporary vision.",
     "processTitle": "How we work",
     "processText": "Every project begins with a fundamental question: what needs to take shape, what language can sustain it, and what experience can make it memorable. From there, we articulate concept, narrative, creative direction, experience, and execution.",
-
     "driveTitle": "What drives us",
-    "driveText": "We are driven by the possibility of transforming memory into language, territory into experience, and intuition into structure. We are interested in creating projects with beauty, yes—but also with thought, intention, and the ability to leave a mark.",
+    "driveText": "We are driven by the possibility of transforming memory into language, territory into experience, and intuition into structure. We are interested in creating projects with beauty, yes, but also with thought, intention, and the ability to leave a mark.",
     "ctaProjects": "Explore projects",
     "team": {
       "tag": "The team",
@@ -127,14 +111,14 @@
           "name": "Dayanny De La Cruz",
           "title": "Chief Executive Officer (CEO)",
           "role": "Culinary visionary",
-          "description": "Executive Leadership, Culinary Architecture, and Social Impact Vision.",
+          "description": "Executive leadership, culinary architecture, and social impact vision.",
           "quote": "Gastronomy is the most honest language that exists."
         },
         {
           "name": "Noelia Caccavelli",
           "title": "Chief Creative Officer (CCO)",
           "role": "Narrative architect",
-          "description": "Brand Creative Vision, Storytelling, and Foundational Concept Development",
+          "description": "Brand creative vision, storytelling, and development of foundational concepts.",
           "quote": "Every brand has a story that deserves to be told with precision."
         }
       ]
@@ -147,9 +131,9 @@
     },
     "tag": "Projects",
     "title": "Projects",
-    "subtitle": "Every project is a story of transformation.",
+    "subtitle": "Each project is a story of transformation.",
     "viewMore": "View more",
-    "viewAll": "View More",
+    "viewAll": "View more",
     "backToProjects": "Back to projects"
   },
   "contact": {
@@ -158,8 +142,8 @@
       "description": "Connect with Itibá Gastronomic Agency for your next culinary project."
     },
     "tag": "Contact",
-    "title": "Let's work together",
-    "subtitle": "Do you have a culinary concept that deserves to shine? We'd love to hear from you.",
+    "title": "Let’s work together",
+    "subtitle": "Do you have a culinary concept that deserves to shine? We’d love to hear about it.",
     "info": {
       "email": "hello@itiba.agency",
       "follow": "Follow us"
@@ -168,13 +152,13 @@
       "name": "Name",
       "namePlaceholder": "Your full name",
       "email": "Email",
-      "emailPlaceholder": "you@email.com",
+      "emailPlaceholder": "your@email.com",
       "company": "Company",
       "companyPlaceholder": "Your company (optional)",
       "message": "Message",
       "messagePlaceholder": "Tell us about your project...",
       "submit": "Send message",
-      "success": "Message sent successfully! We'll be in touch soon.",
+      "success": "Message sent successfully! We’ll get in touch soon.",
       "errors": {
         "nameRequired": "Please enter your name",
         "emailRequired": "Please enter your email",
@@ -185,7 +169,7 @@
   },
   "gallery": {
     "title": "Gallery",
-    "viewAll": "View More"
+    "viewAll": "View more"
   },
   "footer": {
     "tagline": "Gastronomy, Culture, Evolution",
@@ -194,7 +178,7 @@
     "navTitle": "Navigation",
     "servicesTitle": "Services",
     "services": [
-      "Alquimia Lab",
+      "Alchemy Lab",
       "Events & Activations",
       "Training Programs",
       "Strategic Consulting",
