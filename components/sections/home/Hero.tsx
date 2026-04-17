@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useTranslations, useLocale } from "next-intl";
 import { motion, type Variants } from "framer-motion";
+import { BLUR } from "@/lib/blur-placeholders";
 import { HiChevronDown } from "react-icons/hi";
 
 export default function Hero() {
@@ -36,6 +37,8 @@ export default function Hero() {
         alt="Homepage image - Tamal"
         fill
         priority
+        placeholder="blur"
+        blurDataURL={BLUR["home/homebgsmall"]}
         className="object-cover md:hidden"
       />
 
@@ -45,6 +48,8 @@ export default function Hero() {
         alt="Homepage image - Tamal"
         fill
         priority
+        placeholder="blur"
+        blurDataURL={BLUR["home/homebg"]}
         className="object-cover hidden md:block"
       />
 

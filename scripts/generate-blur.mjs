@@ -4,6 +4,8 @@ const images = [
   "public/images/home/05.webp",
   "public/images/home/07.webp",
   "public/images/home/08.webp",
+  "public/images/home/homebg.webp",
+  "public/images/home/homebgsmall.webp",
 ];
 
 for (const src of images) {
