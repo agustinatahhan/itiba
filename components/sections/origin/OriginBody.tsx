@@ -64,8 +64,8 @@ export default function OriginBody() {
       </div>
 
       {/* PROYECTO DESTACADO */}
-      <div className="w-full bg-cream text-black pady">
-        <div className="section-wrapper grid md:grid-cols-2 gap-10 items-center">
+      <div className="w-full bg-cream text-black pady ">
+        <div className="max-w-7xl grid md:grid-cols-2 gap-10 items-center padx">
           {/* Texto */}
           <div className="max-w-xl">
             <motion.p
