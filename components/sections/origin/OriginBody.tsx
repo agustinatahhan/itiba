@@ -68,14 +68,14 @@ export default function OriginBody() {
         <div className="max-w-7xl grid md:grid-cols-2 gap-10 items-center padx">
           {/* Texto */}
           <div className="max-w-xl">
-            <motion.p
-              className="text-sm uppercase tracking-widest text-black/70"
+            {/* <motion.p
+              className="tracking-widest text-black/70"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
             >
               {t("projectTitle")}
-            </motion.p>
+            </motion.p> */}
 
             <motion.h4
               className="mt-2"
