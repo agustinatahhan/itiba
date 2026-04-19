@@ -43,7 +43,7 @@ export const projects: Project[] = [
       en: "Comprehensive development of the culinary concept, brand narrative, and positioning strategy for a Latin American haute cuisine restaurant.",
     },
     image: "/images/projects/06.webp",
-    slug: "origen-restaurante",
+    slug: "llamado-a-la-tierra",
     detail: {
       subtitle: {
         es: "Río San Juan, República Dominicana",
@@ -123,6 +123,6 @@ export const projects: Project[] = [
       en: "Brand identity construction and visual storytelling for a chain of gastronomic experiences focused on local products.",
     },
     image: "/images/projects/guia.webp",
-    slug: "tierra-fuego",
+    slug: "guia-gastronomica-dominicana",
   },
 ];

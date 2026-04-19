@@ -30,7 +30,7 @@ export default function ProjectBody({
       {detail.description && (
         <div className="max-w-7xl padx pady text-center">
           <motion.h4
-            className="text-black"
+            className="text-black text-center md:text-left"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
@@ -57,9 +57,9 @@ export default function ProjectBody({
 
           {/* Texto */}
           <div className="flex items-center bg-olive/80">
-            <div className="py-16 md:py-30 max-w-2xl padx">
+            <div className="py-16 md:py-30 max-w-2xl padx ">
               <motion.h4
-                className=" text-cream"
+                className=" text-cream text-center md:text-left"
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -104,14 +104,24 @@ export default function ProjectBody({
       )}
       {/* Grid de elementos */}
       {detail.elementos && (
-        <div className="w-full pady bg-red-accent/80">
-          <div className="max-w-7xl padx">
+        <div className="w-full pady relative overflow-hidden">
+          <div className="absolute inset-0">
+            <Image
+              src="/images/home/08.webp"
+              alt="Leñas"
+              fill
+              className="object-cover"
+            />
+            <div className="absolute inset-0 bg-black/70" />
+          </div>
+
+          <div className="relative max-w-7xl padx">
             {detail.elementos.tag && (
-              <h4 className="section-tag text-cream">
+              <h4 className="section-tag text-cream mb-10 text-center md:text-left">
                 {l(detail.elementos.tag)}
               </h4>
             )}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-10">
+            <div className="grid grid-cols-1 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-cream/20">
               {detail.elementos.items.map((el, i) => (
                 <motion.div
                   key={i}
@@ -119,10 +129,10 @@ export default function ProjectBody({
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: i * 0.1 }}
+                  className="py-6 md:py-4 md:px-8 md:first:pl-0 md:last:pr-0"
                 >
-                  <div className="divider-gold text-cream" />
-                  <h4 className=" mt-4 text-cream">{l(el.title)}</h4>
-                  <p className=" opacity-75 mt-3 text-left text-cream">
+                  <h4 className="text-cream">{l(el.title)}</h4>
+                  <p className="opacity-60 mt-2 text-cream text-sm">
                     {l(el.description)}
                   </p>
                 </motion.div>
@@ -131,7 +141,6 @@ export default function ProjectBody({
           </div>
         </div>
       )}
-
       {/* Técnicas */}
       {/* {detail.tecnicas && (
         <div className="w-full pady bg-cream">
