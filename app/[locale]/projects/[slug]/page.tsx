@@ -1,23 +1,24 @@
 import { notFound } from "next/navigation";
-import { getTranslations, getLocale } from "next-intl/server";
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
-import { HiArrowLeft } from "react-icons/hi";
 import { projects } from "@/data/projects";
+import FadeIn from "@/components/animations/FadeIn";
+import ProjectBody from "@/components/sections/projects/ProjectBody";
+import fs from "fs";
+import path from "path";
 
 interface ProjectDetailPageProps {
   params: Promise<{ locale: string; slug: string }>;
 }
 
-const galleryImages = [
-  "/images/gallery/01.webp",
-  "/images/gallery/02.webp",
-  "/images/gallery/03.webp",
-  "/images/gallery/04.webp",
-  "/images/gallery/05.webp",
-  "/images/gallery/06.webp",
-];
+function shuffleArray<T>(arr: T[]): T[] {
+  const copy = [...arr];
+  for (let i = copy.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [copy[i], copy[j]] = [copy[j], copy[i]];
+  }
+  return copy;
+}
 
 export async function generateMetadata({
   params,
@@ -38,73 +39,74 @@ export default async function ProjectDetailPage({
   const project = projects.find((p) => p.slug === slug);
   if (!project) notFound();
 
-  const t = await getTranslations("projects");
   const title = locale === "es" ? project.title.es : project.title.en;
-  const category =
-    locale === "es" ? project.category.es : project.category.en;
-  const description =
-    locale === "es" ? project.description.es : project.description.en;
+  const subtitle = project.detail?.subtitle
+    ? locale === "es"
+      ? project.detail.subtitle.es
+      : project.detail.subtitle.en
+    : locale === "es"
+      ? project.category.es
+      : project.category.en;
 
+  // const galleryDir = path.join(process.cwd(), "public/images/gallery");
+  // const allFiles = fs
+  //   .readdirSync(galleryDir)
+  //   .filter((f) => /\.(webp|jpg|jpeg|png)$/i.test(f));
+  // const galleryImages = shuffleArray(allFiles).map(
+  //   (f) => `/images/gallery/${f}`,
+  // );
+
+  const galleryImages = [
+    "/images/gallery/030.webp",
+    "/images/gallery/024.webp",
+    "/images/gallery/019.webp",
+    "/images/gallery/023.webp",
+    "/images/gallery/025.webp",
+    "/images/gallery/026.webp",
+    "/images/gallery/028.webp",
+    "/images/gallery/029.webp",
+        "/images/gallery/031.webp",
+
+  ];
   return (
     <>
       {/* Hero */}
       <section className="imgbg">
         <Image
-          src={project.image}
+          src="/images/home/05.webp"
           alt={title}
           fill
           className="object-cover object-center"
           sizes="100vw"
           quality={80}
         />
-        <div className="absolute inset-0 bg-void/60" />
+        <div className="absolute inset-0 bg-void/70" />
         <div className="section-wrapper pt-0 pb-0 relative z-10 w-full">
-          <h2 className="h2-heading">{title}</h2>
+          <FadeIn delay={0.1}>
+            <h1 className="text-(--color-cream)">{title}</h1>
+            <p className="section-tag mt-3">{subtitle}</p>
+          </FadeIn>
         </div>
       </section>
 
-      {/* Description */}
-      <section className="bg-cream py-16 md:py-24">
-        <div className="max-w-7xl padx">
-          {/* <Link
-            href={`/${locale}/projects`}
-            className="nav-link flex items-center gap-2 font-medium uppercase text-olive hover:text-black transition-colors mb-12 w-fit"
-          >
-            <HiArrowLeft size={13} />
-            {t("backToProjects")}
-          </Link> */}
-
+      {project.detail ? (
+        <ProjectBody
+          detail={project.detail}
+          galleryImages={galleryImages}
+          projectTitle={title}
+          backHref={`/${locale}/projects`}
+        />
+      ) : (
+        <section className="w-full pady">
           <div className="max-w-7xl padx">
-            <h4 className="text-center">
-              {/* {description} */}
-              No está terminado aún 🤓
-            </h4>
+            <p className="text-body">
+              {locale === "es"
+                ? project.description.es
+                : project.description.en}
+            </p>
           </div>
-        </div>
-      </section>
-
-      {/* Gallery */}
-      <section className="bg-cream pb-20 md:pb-32">
-        <div className="max-w-7xl padx">
-          <div className="divider-gold mb-10" />
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-1">
-            {galleryImages.map((src, i) => (
-              <div
-                key={i}
-                className="relative overflow-hidden aspect-square group"
-              >
-                <Image
-                  src={src}
-                  alt={`${title} ${i + 1}`}
-                  fill
-                  className="object-cover transition-transform duration-700 group-hover:scale-105"
-                  sizes="(max-width: 768px) 50vw, 33vw"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+        </section>
+      )}
     </>
   );
 }
