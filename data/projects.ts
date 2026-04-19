@@ -132,7 +132,7 @@ export const projects: Project[] = [
     },
     description: {
       es: "Un proyecto construido desde Itibá para dar visibilidad al sabor dominicano — sus recetas, sus regiones, sus guardianes y sus tendencias — en un solo lugar.",
-      en: "Brand identity construction and visual storytelling for a chain of gastronomic experiences focused on local products.",
+      en: "A project built from Itibá to give visibility to Dominican flavor — its recipes, its regions, its guardians and its trends — all in one place.",
     },
     detail: {
       description: {
@@ -141,12 +141,12 @@ export const projects: Project[] = [
       },
       quote: {
         es: "La gastronomía dominicana es una celebración viva de nuestra identidad. Cada plato combina tradición, creatividad y el inconfundible sabor caribeño que nos distingue.",
-        en: "",
+        en: "Dominican cuisine is a living celebration of our identity. Each dish combines tradition, creativity and the unmistakable Caribbean flavor that sets us apart.",
         img: "/images/projects/guia/guia04.webp",
       },
       extra: {
         es: "La guía mapea la gastronomía dominicana por región, permitiendo explorar cada rincón del país a través de su cocina. Desde el norte hasta el sur, cada destino tiene su propia identidad culinaria — sus ingredientes, sus platos y sus productores.",
-        en: "",
+        en: "The guide maps Dominican gastronomy by region, allowing users to explore every corner of the country through its cuisine. From north to south, each destination has its own culinary identity — its ingredients, its dishes and its producers.",
         img: "/images/projects/guia/guia03.webp",
       },
       link: {
