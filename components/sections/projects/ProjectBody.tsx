@@ -30,7 +30,7 @@ export default function ProjectBody({
       {detail.description && (
         <div className="max-w-7xl padx pady text-center">
           <motion.h4
-            className="text-black text-center md:text-left"
+            className="text-black text-center"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
@@ -38,16 +38,35 @@ export default function ProjectBody({
           >
             {l(detail.description)}
           </motion.h4>
+          {/* Link externo */}
+          {detail.link && (
+            <motion.div
+              className="mt-12"
+              initial={{ opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <a
+                href={detail.link.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-outline"
+              >
+                {t("visitProject")}
+              </a>
+            </motion.div>
+          )}
         </div>
       )}
 
       {/* quote */}
-      {detail.quote && (
+      {detail.quote && detail.quote.img && (
         <div className="grid grid-cols-1 lg:grid-cols-2">
           {/* Imagen */}
           <div className="relative min-h-80 md:min-h-105 lg:min-h-full overflow-hidden group">
             <Image
-              src="/images/projects/06.webp"
+              src={detail.quote.img}
               alt="Itibá"
               fill
               className="object-cover object-center"
@@ -151,39 +170,42 @@ export default function ProjectBody({
       )} */}
 
       {/* Galería */}
-      <div className="w-full pady bg-cream">
-        <div className="max-w-7xl padx">
-          <motion.h4
-            className="text-body mb-3"
-            initial={{ opacity: 0, y: 16 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-          >
-            {detail.galleryTitle ? l(detail.galleryTitle) : t("galleryTitle")}
-          </motion.h4>
-          <div className="divider-gold" />
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 mt-10">
-            {galleryImages.map((src, i) => (
-              <motion.div
-                key={i}
-                className="relative w-full h-75 md:h-100 overflow-hidden"
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true, margin: "-40px" }}
-                transition={{ duration: 0.5, delay: (i % 3) * 0.08 }}
-              >
-                <Image
-                  src={src}
-                  alt={`${projectTitle} ${i + 1}`}
-                  fill
-                  className="object-cover transition-transform duration-700 hover:scale-105"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                />
-              </motion.div>
-            ))}
+      {galleryImages.length > 0 && (
+        <div className="w-full pady bg-cream">
+          <div className="max-w-7xl padx">
+            <motion.h4
+              className="text-body mb-3"
+              initial={{ opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+            >
+              {detail.galleryTitle ? l(detail.galleryTitle) : t("galleryTitle")}
+            </motion.h4>
+            <div className="divider-gold" />
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 mt-10">
+              {galleryImages.map((src, i) => (
+                <motion.div
+                  key={i}
+                  className="relative w-full h-75 md:h-100 overflow-hidden"
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  viewport={{ once: true, margin: "-40px" }}
+                  transition={{ duration: 0.5, delay: (i % 3) * 0.08 }}
+                >
+                  <Image
+                    src={src}
+                    alt={`${projectTitle} ${i + 1}`}
+                    fill
+                    quality={90}
+                    className="object-cover transition-transform duration-700 hover:scale-105"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  />
+                </motion.div>
+              ))}
+            </div>
           </div>
         </div>
-      </div>
+      )}
     </section>
   );
 }

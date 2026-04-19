@@ -4,20 +4,9 @@ import Image from "next/image";
 import { projects } from "@/data/projects";
 import FadeIn from "@/components/animations/FadeIn";
 import ProjectBody from "@/components/sections/projects/ProjectBody";
-import fs from "fs";
-import path from "path";
 
 interface ProjectDetailPageProps {
   params: Promise<{ locale: string; slug: string }>;
-}
-
-function shuffleArray<T>(arr: T[]): T[] {
-  const copy = [...arr];
-  for (let i = copy.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [copy[i], copy[j]] = [copy[j], copy[i]];
-  }
-  return copy;
 }
 
 export async function generateMetadata({
@@ -48,26 +37,7 @@ export default async function ProjectDetailPage({
       ? project.category.es
       : project.category.en;
 
-  // const galleryDir = path.join(process.cwd(), "public/images/gallery");
-  // const allFiles = fs
-  //   .readdirSync(galleryDir)
-  //   .filter((f) => /\.(webp|jpg|jpeg|png)$/i.test(f));
-  // const galleryImages = shuffleArray(allFiles).map(
-  //   (f) => `/images/gallery/${f}`,
-  // );
-
-  const galleryImages = [
-    "/images/gallery/030.webp",
-    "/images/gallery/024.webp",
-    "/images/gallery/019.webp",
-    "/images/gallery/023.webp",
-    "/images/gallery/025.webp",
-    "/images/gallery/026.webp",
-    "/images/gallery/028.webp",
-    "/images/gallery/029.webp",
-        "/images/gallery/031.webp",
-
-  ];
+  const galleryImages = project.detail?.galleryImages ?? [];
   return (
     <>
       {/* Hero */}

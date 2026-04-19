@@ -14,7 +14,7 @@ export default function Footer() {
       Icon: FaInstagram,
     },
     {
-      href: "mailto:hello@itiba.agency",
+      href: "mailto:agenciaitiba@gmail.com",
       label: "Email",
       Icon: FaEnvelope,
     },

@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { motion, AnimatePresence } from "framer-motion";
 import { HiCheckCircle } from "react-icons/hi";
+import emailjs from "@emailjs/browser";
 
 interface FormData {
   name: string;
@@ -30,6 +31,7 @@ export default function ContactForm() {
   const [errors, setErrors] = useState<FormErrors>({});
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [sendError, setSendError] = useState(false);
 
   const validate = (): boolean => {
     const newErrors: FormErrors = {};
@@ -48,11 +50,25 @@ export default function ContactForm() {
     e.preventDefault();
     if (!validate()) return;
     setLoading(true);
-    // Simulate async submission
-    await new Promise((res) => setTimeout(res, 800));
-    console.log("Form submitted:", formData);
-    setLoading(false);
-    setSubmitted(true);
+    setSendError(false);
+    try {
+      await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          company: formData.company,
+          message: formData.message,
+        },
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+      );
+      setSubmitted(true);
+    } catch {
+      setSendError(true);
+    } finally {
+      setLoading(false);
+    }
   };
 
   const handleChange = (
@@ -212,6 +228,13 @@ export default function ContactForm() {
           </p>
         )}
       </div>
+
+      {/* Error de envío */}
+      {sendError && (
+        <p className="text-xs text-red-500" role="alert" style={{ fontFamily: "var(--font-body)" }}>
+          {t("errors.sendFailed")}
+        </p>
+      )}
 
       {/* Submit */}
       <button

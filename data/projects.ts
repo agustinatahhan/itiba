@@ -12,8 +12,9 @@ export interface ProjectBlock {
 export interface ProjectDetail {
   subtitle?: { es: string; en: string };
   description?: { es: string; en: string };
-  quote?: { es: string; en: string, img: string };
-  extra?: { es: string; en: string , img: string};
+  quote?: { es: string; en: string; img: string };
+  extra?: { es: string; en: string; img: string };
+  link?: { link: string };
   blocks?: ProjectBlock[];
   elementos?: {
     tag?: { es: string; en: string };
@@ -21,6 +22,7 @@ export interface ProjectDetail {
   };
   tecnicas?: { es: string; en: string };
   galleryTitle?: { es: string; en: string };
+  galleryImages?: string[];
 }
 
 export interface Project {
@@ -51,18 +53,17 @@ export const projects: Project[] = [
       },
       description: {
         es: "Llamado de la Tierra fue una cena pop-up de alta cocina celebrada en Río San Juan, en la costa norte de la República Dominicana. Una noche irrepetible donde Dayanny de la Cruz, volvió a casa — no como visita, sino como acto de responsabilidad y amor.",
-        en: "The Call of the Earth was a high-cuisine pop-up dinner led by Dayanny de la Cruz, co-founder of Itibá, as a return to the land that shaped her. An act of responsibility, love, and culinary memory."
-       
+        en: "The Call of the Earth was a high-cuisine pop-up dinner led by Dayanny de la Cruz, co-founder of Itibá, as a return to the land that shaped her. An act of responsibility, love, and culinary memory.",
       },
       quote: {
         es: "Tomamos la filosofía del Slow Food Movement y la adaptamos a la costa norte: cocinar desde el territorio, honrar los tiempos de la tierra y crear desde la raíz. Una cocina lenta, consciente y profundamente humana, que celebra lo que somos y lo que podemos llegar a ser.",
         en: "We took the Slow Food Movement philosophy and adapted it to the northern coast: cooking from the territory, honoring the rhythms of the land and creating from the root. A slow, conscious and deeply human cuisine that celebrates what we are and what we can become.",
-         img: "/images/projects/06.webp"
+        img: "/images/projects/06.webp",
       },
       extra: {
         es: "Una noche que no fue solo de Dayanny — sino de todos los que han caminado con ella. Chefs dominicanos, peruanos, mexicanos y caribeños vinieron a Río San Juan a acompañarla en este regreso, como socios, como guías, como familia culinaria.",
         en: "A night that was not just Dayanny's — but everyone who has walked alongside her. Dominican, Peruvian, Mexican, and Caribbean chefs came to Río San Juan to accompany her in this return, as partners, as guides, as culinary family.",
-        img: "/images/gallery/022.webp"
+        img: "/images/gallery/022.webp",
       },
 
       elementos: {
@@ -109,20 +110,50 @@ export const projects: Project[] = [
         es: "Te mostramos lo que fue esa noche",
         en: "We show you what that night was like",
       },
+      galleryImages: [
+        "/images/gallery/030.webp",
+        "/images/gallery/024.webp",
+        "/images/gallery/019.webp",
+        "/images/gallery/023.webp",
+        "/images/gallery/025.webp",
+        "/images/gallery/026.webp",
+        "/images/gallery/028.webp",
+        "/images/gallery/029.webp",
+        "/images/gallery/031.webp",
+      ],
     },
   },
   {
     id: "2",
-    category: { es: "Narrativa de Marca", en: "Brand Storytelling" },
+    category: { es: "República Dominicana", en: "Dominican Republic" },
     title: {
       es: "Guía Gastronómica Dominicana",
       en: "Dominican Gastronomic Guide",
     },
     description: {
-      es: "Construcción de identidad de marca y storytelling visual para una cadena de experiencias gastronómicas con enfoque en productos locales.",
+      es: "Un proyecto construido desde Itibá para dar visibilidad al sabor dominicano — sus recetas, sus regiones, sus guardianes y sus tendencias — en un solo lugar.",
       en: "Brand identity construction and visual storytelling for a chain of gastronomic experiences focused on local products.",
     },
-    image: "/images/projects/guia.webp",
+    detail: {
+      description: {
+        es: "Un proyecto construido desde Itibá para dar visibilidad al sabor dominicano — sus recetas, sus regiones, sus guardianes y sus tendencias — en un solo lugar.",
+        en: "Brand identity construction and visual storytelling for a chain of gastronomic experiences focused on local products.",
+      },
+      quote: {
+        es: "La gastronomía dominicana es una celebración viva de nuestra identidad. Cada plato combina tradición, creatividad y el inconfundible sabor caribeño que nos distingue.",
+        en: "",
+        img: "/images/projects/guia/guia04.webp",
+      },
+      extra: {
+        es: "La guía mapea la gastronomía dominicana por región, permitiendo explorar cada rincón del país a través de su cocina. Desde el norte hasta el sur, cada destino tiene su propia identidad culinaria — sus ingredientes, sus platos y sus productores.",
+        en: "",
+        img: "/images/projects/guia/guia03.webp",
+      },
+      link: {
+        link: "https://www.guiagastronomicadr.com/es",
+      },
+    },
+    image: "/images/projects/guia/guia.webp",
     slug: "guia-gastronomica-dominicana",
   },
 ];

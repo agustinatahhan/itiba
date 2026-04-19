@@ -153,7 +153,8 @@
     "viewMore": "Ver más",
     "viewAll": "Ver Más",
     "backToProjects": "Volver a proyectos",
-    "galleryTitle": "Galería"
+    "galleryTitle": "Galería",
+    "visitProject": "Conoce la guía"
   },
   "contact": {
     "meta": {
@@ -164,7 +165,7 @@
     "title": "Trabajemos juntos",
     "subtitle": "¿Tenés un concepto culinario que merece brillar? Nos encantaría escucharte.",
     "info": {
-      "email": "hello@itiba.agency",
+      "email": "agenciaitiba@gmail.com",
       "follow": "Seguinos en redes"
     },
     "form": {
@@ -182,7 +183,8 @@
         "nameRequired": "Por favor ingresá tu nombre",
         "emailRequired": "Por favor ingresá tu correo electrónico",
         "emailInvalid": "Por favor ingresá un correo válido",
-        "messageRequired": "Por favor ingresá tu mensaje"
+        "messageRequired": "Por favor ingresá tu mensaje",
+        "sendFailed": "Hubo un error al enviar el mensaje. Por favor intentá de nuevo."
       }
     }
   },
