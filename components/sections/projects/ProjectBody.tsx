@@ -39,7 +39,7 @@ export default function ProjectBody({
             {l(detail.description)}
           </motion.h4>
           {/* Link externo */}
-          {detail.link && (
+          {/* {detail.link && (
             <motion.div
               className="mt-12"
               initial={{ opacity: 0, y: 16 }}
@@ -56,7 +56,7 @@ export default function ProjectBody({
                 {t("visitProject")}
               </a>
             </motion.div>
-          )}
+          )} */}
         </div>
       )}
 
