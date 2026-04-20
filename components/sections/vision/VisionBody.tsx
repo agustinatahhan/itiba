@@ -30,7 +30,7 @@ export default function VisionBody() {
           transition={{ duration: 0.6 }}
         >
           <Image
-            src="/images/gallery/01.webp"
+            src="/images/gallery/02.webp"
             alt="Imagen copas brindando"
             fill
             className="object-cover "

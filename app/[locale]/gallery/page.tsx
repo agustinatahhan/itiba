@@ -15,7 +15,7 @@ export default async function Gallery() {
     "/images/gallery/06.webp",
     "/images/gallery/05.webp",
     "/images/gallery/017.webp",
-    "/images/gallery/01.webp",
+    "/images/gallery/02.webp",
     "/images/gallery/015.webp",
 
     "/images/gallery/019.webp",
